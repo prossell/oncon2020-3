@@ -44,6 +44,12 @@
     font-style: italic;
     font-weight: 600;
     font-size: 4.4rem;
+    span {
+      font-family: $noto-sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.6rem;
+    }
   }
 }
 
@@ -53,12 +59,12 @@
   position: relative;
 }
 .scroll_down_svg {
-  @include absolute(0,0,0,0);
+  @include absolute(0, 0, 0, 0);
   margin: auto;
   width: 50px;
 }
 .scroll_line {
-  @include absolute($top:64px,$left:0,$right:0);
+  @include absolute($top: 64px, $left: 0, $right: 0);
   margin: auto;
   width: 1px;
   height: 60px;

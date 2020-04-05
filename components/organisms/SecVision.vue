@@ -5,7 +5,7 @@
       .main_wrapper
         .idea
           IdeaSvg.idea_svg
-          .idea_txt 休暇中の学生にコロナに負けないビジコンを
+          .idea_txt 休暇中の学生にコロナに負けないビジコン
         .comment
           .comment_img
             img.comment_img_img(src="~/assets/images/yokoyama_kazuki.png")

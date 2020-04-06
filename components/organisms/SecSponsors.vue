@@ -22,13 +22,13 @@
       nuxt-link(to="/corporates")
         CommingSoonSvg.comming_soon
       p.prease_weit 情報公開までもうしばらくお待ちください。
-    .container
-      .sponsor_link
-        h3 【企業の皆様へ】
-        p スポンサーは随時募集しています。
-        p スポンサー用の情報については
-          nuxt-link(to="/corporates") 企業の方へ
-          | をご覧ください。
+    //- .container
+    //-   .sponsor_link
+    //-     h3 【企業の皆様へ】
+    //-     p スポンサーは随時募集しています。
+    //-     p スポンサー用の情報については
+    //-       nuxt-link(to="/corporates") 企業の方へ
+    //-       | をご覧ください。
 </template>
 <script>
 import SectionTitle from '~/components/atoms/SectionTitle.vue'
@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      publish: true,
+      publish: false,
       sponsors_A: [
         {
           link: 'https://fuller-inc.com/',

@@ -2,7 +2,6 @@
   .Footer
     .container
       .before_footer
-        .wakamono 若者提案プロジェクト補助金活用事業
         .totop
           TopSvg(@click="scrollToTop()").totop_svg
     footer.footer_background

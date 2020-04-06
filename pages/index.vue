@@ -11,7 +11,7 @@
       SecVision
     .separator
       SankaOubo.sankaoubo_box_parent
-    SecTheme
+    //- SecTheme
     SecAward
     SecShareSNS
     SecSponsors

@@ -5,12 +5,12 @@
 </template>
 <script>
 import SankaouboSvg from '~/assets/images/sankaoubo.svg?inline'
-// import BoshushuryoSvg from '~/assets/images/boshushuryo.svg?inline'
+import BoshushuryoSvg from '~/assets/images/boshushuryo.svg?inline'
 import CommingSoonSvg from '~/assets/images/comming_soon.svg?inline'
 export default {
   components: {
     SankaouboSvg,
-    // BoshushuryoSvg,
+    BoshushuryoSvg,
     CommingSoonSvg
   }
 }

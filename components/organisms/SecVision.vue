@@ -5,16 +5,16 @@
       .main_wrapper
         .idea
           IdeaSvg.idea_svg
-          .idea_txt 相互に相性がわかり、<br>スキルアップもできる就活スタイルへ 
+          .idea_txt 休暇中の学生にコロナに負けないビジコン
         .comment
           .comment_img
             img.comment_img_img(src="~/assets/images/yokoyama_kazuki.png")
             .comment_who(v-if="$mq === 'sm'")
-              .comment_who--post 運営代表  長岡高専 専攻科 2年 
+              .comment_who--post 運営代表  長岡高専 専攻科 2年
               .comment_who--name 横山 和輝
           .comment_wrapper
             .comment_who(v-if="$mq !== 'sm'")
-              .comment_who--post 運営代表  長岡高専 専攻科 2年 
+              .comment_who--post 運営代表  長岡高専 専攻科 2年
               .comment_who--name 横山 和輝
             .comment_txt
               p 私は留学していた友人たちが、帰国後に計画留年する姿を見てきました。
@@ -22,21 +22,21 @@
               p そこで地方にいても、海外にいても隔てなく、企業と学生が相互に相性を測れ、スキルアップもできる。そんな就活に変えるための第一歩としてこのコンテストを企画しました。<br><br>
               p Online Intern Contestでは、どんな場所からでもオンライン上で集まった学生たちがチームを組み、企業から出された課題に取り組みます。企業は結果だけでなく、活動プロセスを評価できるため、学生との相性も確認できます。
               p 今までにない新しい就活を提供していきます。ぜひ挑戦してみてください！
-        .matching
-          .matching_thinkings
-            .matching_thinkings_title: span 学生の<br>思い
-            .matching_thinkings_txt
-              p 企業に認められるような経験や実績を積みたい！
-              p 自分に合う企業へ就職したい！
-              p 地方でもビジコン等に挑戦できる機会が欲しい！
-          .matching_logo
-            MatchingSvg.matching_logo_svg
-          .matching_thinkings
-            .matching_thinkings_title: span 企業の<br>思い
-            .matching_thinkings_txt
-              p ハッカソンやアイデアソン、ビジネスコンテストなど、
-                | 様々なイベントに参加するアクティブな学生がほしい！
-              p 学生のプロジェクトの進め方を見てみたい！
+        //- .matching
+        //-   .matching_thinkings
+        //-     .matching_thinkings_title: span 学生の<br>思い
+        //-     .matching_thinkings_txt
+        //-       p 企業に認められるような経験や実績を積みたい！
+        //-       p 自分に合う企業へ就職したい！
+        //-       p 地方でもビジコン等に挑戦できる機会が欲しい！
+        //-   .matching_logo
+        //-     MatchingSvg.matching_logo_svg
+        //-   .matching_thinkings
+        //-     .matching_thinkings_title: span 企業の<br>思い
+        //-     .matching_thinkings_txt
+        //-       p ハッカソンやアイデアソン、ビジネスコンテストなど、
+        //-         | 様々なイベントに参加するアクティブな学生がほしい！
+        //-       p 学生のプロジェクトの進め方を見てみたい！
 </template>
 <script>
 // components

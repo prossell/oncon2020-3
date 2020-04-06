@@ -39,12 +39,15 @@ export default {
   position: relative;
   a {
     color: $black-txt;
+    text-decoration-line: none;
+    border-bottom: 1px solid $black;
   }
   &_data {
+    font-size: 2rem;
     display: inline;
   }
   &_title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     display: inline;
     padding-left: 16px;
   }

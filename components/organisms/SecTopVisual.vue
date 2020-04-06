@@ -5,7 +5,7 @@
       .top_visual_box
         LogoSvg.logo
         .right_contents_wrapper
-          .catch_copy あたらしい就活<br>のカタチ
+          .catch_copy コロナに負けるな
           SankaOubo
           .application_period
             .application_period_text 応募期間

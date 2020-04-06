@@ -5,11 +5,11 @@
       .top_visual_box
         LogoSvg.logo
         .right_contents_wrapper
-          .catch_copy あたらしい就活<br>のカタチ
+          .catch_copy コロナに負けるな
           SankaOubo
           .application_period
             .application_period_text 応募期間
-            .application_period_date 12/11 ~ 1/11
+            .application_period_date 4/17<span>まで</span>
       .scroll_down(v-if="$mq !== 'sm'")
         ScrollSvg.scroll_down_svg
         .scroll_line

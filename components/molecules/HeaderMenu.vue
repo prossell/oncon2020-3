@@ -34,7 +34,8 @@ export default {
       links: [
         { to: '/about', name: 'About' },
         { to: '/news', name: 'News' },
-        { to: '/corporates', name: '企業の方へ' }
+        // { to: '/corporates', name: '企業の方へ' }
+        { to: '/', name: '企業の方へ' }
       ]
     }
   },

@@ -36,6 +36,8 @@ $final_pitch_width: 26%;
 .consept {
   width: 100% - $final_pitch_width;
   padding-left: 12%;
+  text-align: center;
+
   &__box {
     width: 24%;
     height: 16px;
@@ -45,6 +47,7 @@ $final_pitch_width: 26%;
   &__title {
     @include flex();
     margin-top: 40px;
+
     &__txt {
       flex-grow: 0;
       flex-shrink: 0;
@@ -70,15 +73,19 @@ $final_pitch_width: 26%;
 @media screen and (max-width: 1500px) {
   .consept {
     padding-left: 8%;
+    text-align: center;
     &__title {
       margin-top: 4%;
       &__txt {
         font-size: 2.6vw;
+        font-weight: $weight-thin;
+        margin: auto;
       }
     }
     &__discription {
       margin-top: 40px;
       font-size: 1.7rem;
+
       p {
         margin: 0.4rem 0;
       }
@@ -93,6 +100,8 @@ $final_pitch_width: 26%;
   .consept {
     width: 100%;
     padding-left: 0;
+    text-align: center;
+
     &__title {
       display: block;
       margin-top: 28px;
@@ -101,8 +110,8 @@ $final_pitch_width: 26%;
         text-align: center;
         font-size: 2.8rem;
         &::before {
-          content: "";
-          @include absolute($bottom:0, $left:0);
+          content: '';
+          @include absolute($bottom: 0, $left: 0);
           z-index: -1;
           display: block;
           width: 100%;

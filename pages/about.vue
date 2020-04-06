@@ -46,12 +46,6 @@ export default {
           link: 'https://twitter.com/Kiki_Prossell'
         },
         {
-          icon: 'hara',
-          name: '徳山高専\n原洋介 特命准教授',
-          role: 'アドバイザー',
-          link: 'https://www.facebook.com/satetsuman'
-        },
-        {
           icon: 'kantaro',
           name: '吉村勘太郎',
           link: 'https://www.facebook.com/yoka0930'
@@ -70,36 +64,7 @@ export default {
           icon: 'miyaji',
           name: '宮地篤士',
           link: 'https://twitter.com/tussy5969'
-        },
-        { icon: 'gomi', name: '五味', link: '' },
-        {
-          icon: 'shion_watanabe',
-          name: '渡辺紫音',
-          link: 'https://www.facebook.com/profile.php?id=100006874932579'
-        },
-        {
-          icon: 'moe_ishihara',
-          name: 'もえ',
-          link: 'https://www.instagram.com/0627pink/'
-        },
-        {
-          icon: 'yako',
-          name: 'yako',
-          link: 'https://mobile.twitter.com/ujidam'
-        },
-        {
-          icon: 'ssid',
-          name: 'SSID',
-          link: 'https://twitter.com/realize_Sora'
-        },
-        {
-          icon: 'lakhesis',
-          name: 'ラキシス',
-          link: 'https://twitter.com/L4khesis'
-        },
-        { icon: 'nakano', name: '中野', link: '' },
-        { icon: 'kazama', name: '風間鼓太朗', link: '' },
-        { icon: 'yuzu', name: 'yuzu', link: '' }
+        }
       ]
     }
   },

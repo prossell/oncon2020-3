@@ -20,8 +20,8 @@
           p.information_list_content
             span.information_list_content--sponsor 主催：
               nuxt-link(to="/about") Prossell
-            span.information_list_content--coorporate 協力：
-              a(href = "https://kosen-career.tech/") 高専キャリア
+            //- span.information_list_content--coorporate 協力：
+            //-   a(href = "https://kosen-career.tech/") 高専キャリア
 
 </template>
 <script>

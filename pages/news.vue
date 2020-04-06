@@ -35,66 +35,8 @@ export default {
       news_list: [
         {
           pub: true,
-          date: '2019/12/07',
+          date: '2020/04/10',
           title: 'オンコン公式Webサイトを公開しました。'
-        },
-        {
-          pub: true,
-          date: '2019/12/11',
-          title: '参加者応募が開始されました！',
-          detaile: '同時に、新しくAboutページとNewsページを公開しました。'
-        },
-        {
-          pub: true,
-          date: '2019/12/11',
-          title: 'スポンサー企業の公開',
-          detaile:
-            'フラー(株)様、(株)高専キャリア教育研究所様、(株)松井組様、(株)イタチ様、CS合同会社様、日本サミコン(株)様'
-        },
-        {
-          pub: true,
-          date: '2019/12/11',
-          title: '高専マガジンにご紹介いただきました！',
-          link: 'http://kosen-magazine.com/about-prossell/'
-        },
-        {
-          pub: true,
-          date: '2019/12/15',
-          title: 'スポンサー企業の追加',
-          detaile: '株式会社スプリックス様'
-        },
-        {
-          pub: true,
-          date: '2019/12/17',
-          title: 'スポンサー企業の追加',
-          detaile: '株式会社笠原建設様'
-        },
-        {
-          pub: true,
-          date: '2019/12/19',
-          title: 'スポンサー企業の追加',
-          detaile: '株式会社システムスクエア様'
-        },
-        {
-          pub: true,
-          date: '2019/12/24',
-          title: '参加対象者の表記変更',
-          link: 'https://prossell.jp/#information',
-          detaile:
-            'Twitterでいただいた質問で、高校生や専門学生でも参加できる様になりました。それに合わせて表記も修正しました。'
-        },
-        {
-          pub: true,
-          date: '2019/12/30',
-          title: 'スポンサー企業の追加とテーマの公開',
-          detaile: '人材ニュース株式会社様を追加し、テーマを公開しました。'
-        },
-        {
-          pub: true,
-          date: '2019/01/11',
-          title: 'オンコンがスタートしました！🎉🎉🎉',
-          detaile:
-            '学生の新規応募を締め切りました。応募者数:56名、これから頑張ります！'
         }
       ]
     }

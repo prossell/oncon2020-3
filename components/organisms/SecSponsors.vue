@@ -19,7 +19,7 @@
             .sponsor_name <span>Plan C</span> {{spC.name}}
 
     .container(v-else)
-      nuxt-link(to="/corporates")
+      nuxt-link(to="/")
         CommingSoonSvg.comming_soon
       p.prease_weit 情報公開までもうしばらくお待ちください。
     //- .container

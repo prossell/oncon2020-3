@@ -2,7 +2,7 @@
   .SecTheme#theme
     SectionTitle(:title="'Theme'")
     .container
-      .theme_discription これら3つのテーマの中から1つを取り組んでいただきます。
+      //- .theme_discription これら3つのテーマの中から1つを取り組んでいただきます。
       .theme_lists
         .theme_list( v-for="(theme,theme_id) in themes" :key="`theme_${theme_id}`")
           .theme_number 0{{theme_id + 1}}
@@ -23,16 +23,8 @@ export default {
     return {
       themes: [
         {
-          company: 'フラー株式会社',
-          title: 'モバイルアプリの実利用データを用いた新規事業を提案せよ'
-        },
-        {
-          company: '高専キャリア株式会社',
-          title: '全国の学生がリモートでつながって仕事ができる仕組みを考えよ'
-        },
-        {
-          company: '人材ニュース株式会社',
-          title: '就活学生と地域の中小企業をマッチングする方法を考えよ'
+          company: 'プロッセル',
+          title: 'afterコロナ、withコロナについて考えよう'
         }
       ]
     }

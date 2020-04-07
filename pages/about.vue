@@ -63,7 +63,12 @@ export default {
         {
           icon: 'miyaji',
           name: '宮地篤士',
-          link: 'https://twitter.com/tussy5969'
+          link: 'https://www.facebook.com/atsushi.miyaji.0226'
+        },
+        {
+          icon: 'otani',
+          name: '大谷俊介',
+          link: 'https://www.facebook.com/moyashi12f'
         }
       ]
     }

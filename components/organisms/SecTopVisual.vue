@@ -9,7 +9,7 @@
           SankaOubo
           .application_period
             .application_period_text 応募期間
-            .application_period_date 4/17<span>まで</span>
+            .application_period_date 4/8〜4/16
       .scroll_down(v-if="$mq !== 'sm'")
         ScrollSvg.scroll_down_svg
         .scroll_line

@@ -4,12 +4,12 @@
     SubPageTopTitle(:title="'Rules'")
     .container
       .main_wrapper
-        BoshushuryoSvg
+        //- BoshushuryoSvg
         .disclaimer_box
           .disclaimer_box_title: p 応募の前にご確認ください。
           .disclaimer_box_txt(v-html="disclaimer")
         .disclaimer_checkbox(@click="toggleAgreement()")
-          .disclaimer_checkbox_icon 
+          .disclaimer_checkbox_icon
             CheckSvg.check_icon(v-if="agree")
           .disclaimer_checkbox_txt 上記内容に同意の上、応募します。
         button(:disabled="!agree" @click="goToForm()" :class="{'agree_button--disabled': !agree}").agree_button 応募フォームへ
@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      agree: false
+      agree: true
     }
   },
   computed: {
@@ -47,8 +47,8 @@ export default {
   },
   methods: {
     toggleAgreement() {
-      this.$scrollTo('#top')
-      // this.agree = this.agree !== true
+      // this.$scrollTo('#top')
+      this.agree = this.agree !== true
     },
     goToForm() {
       window.location.href =
@@ -110,7 +110,7 @@ export default {
   }
 }
 .disclaimer_checkbox {
-  opacity: 0.3;
+  // opacity: 0.3;
 
   margin: 64px auto;
   @include flex($justifyContent: center);

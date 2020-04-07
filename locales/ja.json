@@ -2,5 +2,21 @@
   "index": {
     "catch_copy": "コロナに負けるな!",
     "application_period": "応募期間"
+  },
+  "information": {
+    "theme": {
+      "whom": "参加対象者",
+      "what_evaluate": "審査の視点",
+      "who_evaluate": "審査員",
+      "powered_by": "運営"
+    },
+    "content": {
+      "whom": "大学生、大学院生、高校生、専門学生、高専生、専攻科生",
+      "what_evaluate_1": "実現性、社会貢献度、市場の成長性、",
+      "what_evaluate_2": "独創性、スケジュール達成度",
+      "caution": "スケジュールに沿ったタスクの達成率も評価に加味されます。",
+      "who_evaluate": "未定",
+      "powered_by": "主催："
+    }
   }
 }

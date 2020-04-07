@@ -55,7 +55,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~plugins/vue-scrollto'],
+  plugins: ['~/plugins/vue-scrollto', '~/plugins/i18n'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -71,7 +71,8 @@ export default {
     '@nuxtjs/markdownit',
     'nuxt-webfontloader',
     ['nuxt-mq'],
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    ['cookie-universal-nuxt', { parseJSON: false }]
   ],
   styleResources: {
     scss: ['~/assets/scss/variables.scss', '~/assets/scss/mixins.scss'],

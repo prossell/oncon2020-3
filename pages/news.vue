@@ -35,7 +35,7 @@ export default {
       news_list: [
         {
           pub: true,
-          date: '2020/04/10',
+          date: '2020/04/07',
           title: 'オンコン公式Webサイトを公開しました。'
         }
       ]

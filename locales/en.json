@@ -39,5 +39,11 @@
     "property": "award ceremony",
     "content_1": "on video chatting service ",
     "content_2": ""
+  },
+  "share": {
+    "title_1": "share ",
+    "title_2": " via SNS",
+    "title_black": "#online_contest",
+    "check": "follow to check latest information"
   }
 }

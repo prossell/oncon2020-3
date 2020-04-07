@@ -5,11 +5,11 @@
     .container
       .main_wrapper
         .application_period
-          .application_period_date 4/10 ~ 4/17
+          .application_period_date 4/8 ~ 4/16
           .application_period_text 参加応募期間
         .application_large
           Slant1Svg.slant.slant_1
-          .application_large_date 4/18
+          .application_large_date 4/17
           .application_large_text Kickoff
           .explanation
             .explanation_text 3人1組チームとテーマの発表

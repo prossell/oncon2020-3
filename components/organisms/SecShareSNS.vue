@@ -5,14 +5,15 @@
       .main_wrapper
         .share_contents
           .share_contents__title
-            span.title_black #オンコン
-            | をSNSでシェア！
+            | {{ $t('share.title_1') }}
+            span.title_black {{ $t('share.title_black') }}
+            | {{ $t('share.title_2') }}
           .share_contents__links
             TwitterSvg(@click="ShereSNS('twitter')" alt="Twitter").share_link
             FacebookSvg(@click="ShereSNS('facebook')" alt="Facebook").share_link
             LineSvg(@click="ShereSNS('line')" alt="Line").share_link
         .share_contents
-          .share_contents__title フォローして最新情報をチェック！
+          .share_contents__title {{ $t('share.check') }}
           .share_contents__links.share_contents__links--check
             a(href="https://twitter.com/Prossell_JP").check_link.check_link__twitter
               TwitterWhiteSvg.check_link__logo

@@ -21,7 +21,7 @@
     .container(v-else)
       nuxt-link(to="/")
         CommingSoonSvg.comming_soon
-      p.prease_weit 情報公開までもうしばらくお待ちください。
+      p.prease_weit {{ $t('sponsors.wait') }}
     //- .container
     //-   .sponsor_link
     //-     h3 【企業の皆様へ】

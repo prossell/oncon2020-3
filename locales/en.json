@@ -34,5 +34,19 @@
       "company": "Prossell",
       "title": "consider after corona and with corona world"
     }
+  },
+  "award": {
+    "property": "award ceremony",
+    "content_1": "on video chatting service ",
+    "content_2": ""
+  },
+  "share": {
+    "title_1": "share ",
+    "title_2": " via SNS",
+    "title_black": "#online_contest",
+    "check": "follow to check latest information"
+  },
+  "sponsors": {
+    "wait": "We will announce detail information soon"
   }
 }

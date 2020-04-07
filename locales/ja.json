@@ -34,5 +34,19 @@
       "company": "プロッセル",
       "title": "afterコロナ、withコロナについて考えよう"
     }
+  },
+  "award": {
+    "property": "表彰式",
+    "content_1": "ビデオチャットサービス",
+    "content_2": "にて開催"
+  },
+  "share": {
+    "title_1": "",
+    "title_2": "をSNSでシェア！",
+    "title_black": "#オンコン",
+    "check": "フォローして最新情報をチェック！"
+  },
+  "sponsors": {
+    "wait": "情報公開までもうしばらくお待ちください。"
   }
 }

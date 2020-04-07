@@ -5,10 +5,10 @@
       .top_visual_box
         LogoSvg.logo
         .right_contents_wrapper
-          .catch_copy コロナに負けるな
+          .catch_copy {{ $t('index.catch_copy') }}
           SankaOubo
           .application_period
-            .application_period_text 応募期間
+            .application_period_text {{ $t('index.application_period') }}
             .application_period_date 4/8 ~ 4/16
       .scroll_down(v-if="$mq !== 'sm'")
         ScrollSvg.scroll_down_svg

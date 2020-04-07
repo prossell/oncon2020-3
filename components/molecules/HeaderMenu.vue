@@ -14,18 +14,22 @@
         .header_menu_links(v-else)
           .header_menu_link(v-for="(link,link_id) in links" :key="`header_menu_link_${link_id}`")
             nuxt-link(:to="link.to").header_menu_link_title {{link.name}}
+        .header_menu_locale
+          ToggleLocale
         .header_menu_sns
           TopShareSNS
 </template>
 <script>
 // components
 import TopShareSNS from '~/components/molecules/TopShareSNS.vue'
+import ToggleLocale from '~/components/atoms/ToggleLocale.vue'
 // svg
 import MenuSvg from '~/assets/images/menu.svg?inline'
 
 export default {
   components: {
     TopShareSNS,
+    ToggleLocale,
     MenuSvg
   },
   data() {
@@ -55,6 +59,7 @@ export default {
 $header-height: 80px;
 
 .HeaderMenu {
+  z-index: 200;
   width: 100%;
   height: $header-height;
 }
@@ -131,6 +136,10 @@ a.header_menu_link_title,
 a.header_menu_link_title:visited,
 a.header_menu_link_title:link {
   text-decoration-line: none;
+}
+
+.header_menu_locale {
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: $sm) {

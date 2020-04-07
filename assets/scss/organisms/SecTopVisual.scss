@@ -4,6 +4,9 @@
   height: 100%;
   @include flex($alignItems: flex-end);
 }
+.container {
+  z-index: auto;
+}
 .logo {
   margin-top: 48px;
   width: 43%;

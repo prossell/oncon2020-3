@@ -41,6 +41,10 @@ export default {
     color: $black-txt;
     text-decoration-line: none;
     border-bottom: 1px solid $black;
+    &:hover {
+      color: lighten($black, 20%);
+      border-bottom: 1px solid lighten($black, 20%);
+    }
   }
   &_data {
     font-size: 2rem;

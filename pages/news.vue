@@ -41,8 +41,9 @@ export default {
         {
           pub: true,
           date: '2020/04/08',
-          title: '高専マガジンにご紹介いただきました！',
-          link: 'https://kosen-magazine.com/online-intern-contest-2020-report/'
+          title: '高専マガジンに掲載されました！',
+          link: 'https://kosen-magazine.com/online-intern-contest-2020-report/',
+          detaile: '前回の参加レポートをまとめております'
         }
       ]
     }

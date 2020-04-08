@@ -1,7 +1,6 @@
 <template lang="pug">
   .sankaoubo_box
-    //- nuxt-link(to="/disclaimer").application_btn
-    nuxt-link(to="/").application_btn
+    nuxt-link(to="/disclaimer").application_btn
       CommingSoonSvg.sankaoubo
 </template>
 <script>

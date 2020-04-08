@@ -9,8 +9,9 @@
           .application_period_text {{ $t('schedule.application') }}
         .application_large
           Slant1Svg.slant.slant_1
-          .application_large_date 4/17
+          .application_large_date 4/17<sup>※1</sup>
           .application_large_text Kickoff
+          .application_large_time ※1 10:00 ~ (UTC+9)
           .explanation
             .explanation_text {{ $t('schedule.kickoff') }}
         .contest_periods(v-if="$mq !== 'sm'")
@@ -18,13 +19,14 @@
             .contest_period_date {{sch.data}}
             .contest_period_text {{sch.content}}
         .contest_periods(v-else)
-          .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`")
+          .contest_period(v-for="(sch, sch_key) in $t('schedule.schedules')" :key="`sch_${sch_key}`")
             .contest_period_date {{sch.data}}
             .contest_period_text {{sch.content}}
         .application_large.application_large--final
           Slant2Svg.slant.slant_2
-          .application_large_date 4/24
+          .application_large_date 4/24<sup>※2</sup>
           .application_large_text Final pitch
+          .application_large_time ※2 17:00 ~ 19:00 (UTC+9)
           .explanation.explanation--final
             .explanation_text {{ $t('schedule.final') }}
 

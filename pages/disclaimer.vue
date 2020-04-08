@@ -6,13 +6,13 @@
       .main_wrapper
         //- BoshushuryoSvg
         .disclaimer_box
-          .disclaimer_box_title: p 応募の前にご確認ください。
+          .disclaimer_box_title: p {{ $t('disclaimer.please') }}
           .disclaimer_box_txt(v-html="disclaimer")
         .disclaimer_checkbox(@click="toggleAgreement()")
           .disclaimer_checkbox_icon
             CheckSvg.check_icon(v-if="agree")
-          .disclaimer_checkbox_txt 上記内容に同意の上、応募します。
-        button(:disabled="!agree" @click="goToForm()" :class="{'agree_button--disabled': !agree}").agree_button 応募フォームへ
+          .disclaimer_checkbox_txt {{ $t('disclaimer.agree') }}
+        button(:disabled="!agree" @click="goToForm()" :class="{'agree_button--disabled': !agree}").agree_button {{ $t('disclaimer.toform') }}
     Footer
 </template>
 <script>
@@ -58,7 +58,7 @@ export default {
     },
     goToForm() {
       window.location.href =
-        'https://docs.google.com/forms/d/e/1FAIpQLSfpyvlck5dD3NHa8azbPXwViVAoVvVxDIfdL0ryhwPLyC_IJg/viewform'
+        'https://docs.google.com/forms/u/2/d/e/1FAIpQLSe2kZuKIh-WkTyUVBw2qr39NfUGkXm7xwyyl2mI70jbBb04_A/viewform'
     }
   },
   head() {

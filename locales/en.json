@@ -93,5 +93,10 @@
   },
   "sponsors": {
     "wait": "We will announce detail information soon"
+  },
+  "disclaimer": {
+    "please": "Please check before applying.",
+    "agree": "Apply after agreeing to the above.",
+    "toform": "To application form"
   }
 }

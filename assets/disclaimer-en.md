@@ -37,7 +37,7 @@ Unless otherwise provided for by law, the organizer shall not be liable for any 
 (4) The submission of personal information is at the discretion of the participants. However, if you do not provide the correct information necessary to run the Contest (name, email address, phone number, etc.), you may not be able to participate.
 
 (5) Request for disclosure, etc. of personal information
-You have the right to request that we notify you of the purpose of use of your personal information, disclose or correct your personal information, add or delete items, delete or cease using your personal information, or cease providing it to us. Please contact the organizer’s contact information when making such a request.
+You have the right to request that we notify you of the purpose of use of your personal information, disclose or collect your personal information, add or delete items, delete or cease using your personal information, or cease providing it to us. Please contact the organizer’s contact information when making such a request.
 
 ### 7. Anti-social forces
 If it is found that a Participant or a member of the board of directors of the organization is an antisocial force, such as an organized crime syndicate, or has a relationship with an antisocial force, or if the organizer has a basis for its judgment, the Participant will be disqualified from participating in the Contest and winning the prize.

@@ -1,6 +1,6 @@
 <template lang="pug">
   .sankaoubo_box
-    nuxt-link(to="/disclaimer/").application_btn
+    nuxt-link(to="/disclaimer").application_btn
       SankaouboSvg.sankaoubo
 </template>
 <script>

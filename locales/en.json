@@ -76,12 +76,12 @@
     "comment_4": "We, also encourage high school students to join us!",
     "comment_5": "Participants from previous time as well as newcomers, let's make it possible!"
   },
-  "theme": {
-    "prossell": {
+  "themes": [
+    {
       "company": "Prossell",
-      "title": "consider after corona and with corona world"
+      "title": "aconsider after corona and with corona world"
     }
-  },
+  ],
   "award": {
     "property": "award ceremony",
     "content_1": "on video chatting service ",

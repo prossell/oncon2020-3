@@ -4,11 +4,11 @@
       SectionTitle(:title="'ThreeFeatures'")
       .feature_content_wrapper
         .feature_content
-          .feature_topic(v-for="(feature,feature_id) in features")
+          .feature_topic(v-for="(feature,feature_id) in $t('feature.features')")
             OneFeature(
-              :title="'feature.' + feature + '.title'"
+              :title="feature.title"
               :logo="feature_id"
-              :discription="'feature.' + feature + '.discription'"
+              :discription="feature.discription"
             )
 </template>
 <script>
@@ -22,9 +22,7 @@ export default {
     OneFeature
   },
   data() {
-    return {
-      features: ['online', 'link', 'process']
-    }
+    return {}
   }
 }
 </script>

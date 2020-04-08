@@ -1,19 +1,19 @@
 <template lang="pug">
   .OneFeature(v-if="$mq !== 'sm' && $mq !== 'tb'")
-    .feature_title {{title}}
+    .feature_title {{ $t(title) }}
     Icon1OnlineSvg.feature_logo(v-if="logo === 0")
     Icon2LinkSvg.feature_logo(v-if="logo === 1")
     Icon3ProcessSvg.feature_logo(v-if="logo === 2")
     .feature_discription
-      p(v-for="(dis,dis_key) in discription" :key="`OneFeaDis_${dis_key}`") {{dis}}
+      p(v-for="(dis,dis_key) in $t(discription) " :key="`OneFeaDis_${dis_key}`") {{dis}}
   .OneFeature_side(v-else)
     Icon1OnlineSvg.feature_logo(v-if="logo === 0")
     Icon2LinkSvg.feature_logo(v-if="logo === 1")
     Icon3ProcessSvg.feature_logo(v-if="logo === 2")
     .OneFeature_side_text
-      .feature_title {{title}}
+      .feature_title {{ $t(title) }}
       .feature_discription
-        p(v-for="(dis,dis_key) in discription" :key="`OneFeaDis_${dis_key}`") {{dis}}
+        p(v-for="(dis,dis_key) in $t(discription)" :key="`OneFeaDis_${dis_key}`") {{dis}}
 
 </template>
 <script>

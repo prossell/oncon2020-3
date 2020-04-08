@@ -1,8 +1,7 @@
 <template lang="pug">
   .sankaoubo_box
-    //- nuxt-link(to="/disclaimer").application_btn
-    nuxt-link(to="/").application_btn
-      CommingSoonSvg.sankaoubo
+    nuxt-link(to="/disclaimer").application_btn
+      SankaouboSvg.sankaoubo
 </template>
 <script>
 import SankaouboSvg from '~/assets/images/sankaoubo.svg?inline'

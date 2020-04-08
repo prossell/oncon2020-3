@@ -82,10 +82,11 @@ export default {
   webfontloader: {
     // add Google Fonts as "custom" | workaround required
     custom: {
-      families: ['Noto Sans JP:n1,n4', 'PT Sans:n7i'],
+      families: ['Noto Sans JP:n1,n4', 'PT Sans:n7i', 'Noto Sans: n7'],
       urls: [
         'https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400&display=swap',
-        'https://fonts.googleapis.com/css?family=PT+Sans:700i&display=swap'
+        'https://fonts.googleapis.com/css?family=PT+Sans:700i&display=swap',
+        'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'
       ]
     }
   },

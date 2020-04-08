@@ -1,7 +1,10 @@
 <template lang="pug">
   .sankaoubo_box
     nuxt-link(to="/disclaimer").application_btn
-      SankaouboSvg.sankaoubo
+      SankaouboSvg.sankaoubo(v-if="this.$i18n.locale === 'ja'")
+      .sankaoubo(v-if="this.$i18n.locale === 'en'")
+        .enfont Apply for this event
+
 </template>
 <script>
 import SankaouboSvg from '~/assets/images/sankaoubo.svg?inline'
@@ -20,6 +23,7 @@ export default {
   width: 520px;
   height: 72px;
   margin-left: auto;
+  text-decoration: none;
   background-color: $black;
   @include flex($justifyContent: center);
   &:hover {
@@ -34,13 +38,34 @@ export default {
   width: 260px;
 }
 
+.enfont {
+  color: $theme-green;
+  text-align: center;
+  font-family: $noto-sans;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.4rem;
+  background: -webkit-linear-gradient(60deg, $theme-green, $theme-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: $md) {
   .application_btn {
     width: 30vw;
     height: 5vw;
   }
   .sankaoubo {
-    width: 18vw;
+    width: 30vw;
+  }
+  .enfont {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: $tb) {
+  .enfont {
+    font-size: 1.8rem;
   }
 }
 
@@ -51,7 +76,10 @@ export default {
     height: 52px;
   }
   .sankaoubo {
-    width: 40%;
+    width: 75%;
+  }
+  .enfont {
+    font-size: 2rem;
   }
 }
 </style>

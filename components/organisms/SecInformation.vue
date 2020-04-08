@@ -10,8 +10,8 @@
           p.information_list_theme {{ $t('information.theme.what_evaluate') }}
           .information_list_content
             p.information_list_content--text {{ $t('information.content.what_evaluate_1') }}
-              | <br>{{ $t('information.content.what_evaluate_2') }}<sup>※</sup>
-            p.information_list_content--caution ※{{ $t('information.content.caution') }}
+              | <br>{{ $t('information.content.what_evaluate_2') }}<sup>※3</sup>
+            p.information_list_content--caution ※3 {{ $t('information.content.caution') }}
         .information_list.judge
           p.information_list_theme {{ $t('information.theme.who_evaluate')}}
           p.information_list_content {{ $t('information.content.who_evaluate') }}

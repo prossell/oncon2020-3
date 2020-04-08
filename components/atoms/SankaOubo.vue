@@ -56,7 +56,7 @@ export default {
     height: 5vw;
   }
   .sankaoubo {
-    width: 30vw;
+    width: 24vw;
   }
   .enfont {
     font-size: 2rem;

@@ -3,7 +3,7 @@
     .title_wrapper(v-if="title === 'ThreeFeatures'")
       .threefeatures
         Three.threefeatures_three
-        h2.threefeatures_other つの特徴
+        h2.threefeatures_other {{ $t('feature.title') }}
     .title_wrapper(v-else)
       h2 {{title}}
 </template>

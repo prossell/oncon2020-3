@@ -45,21 +45,7 @@ export default {
     Slant3Svg
   },
   data() {
-    return {
-      // schedules: [
-      //   { data: 'Step 1', content: 'アイスブレーク、本質的課題の確認' },
-      //   { data: 'Step 2', content: 'アイデア出し' },
-      //   { data: 'Step 3', content: '解決案の提示' }
-      // ]
-      // schedules: [
-      //   { data: 'Week1', content: 'アイスブレーク、本質的課題の確認' },
-      //   { data: 'Week2', content: 'アイデア出し' },
-      //   { data: 'Week3', content: '解決策の提示' },
-      //   { data: 'Week4', content: '中間発表（動画の提出）、フィードバック' },
-      //   { data: 'Week5,6', content: '事業計画、資金計画の作成' },
-      //   { data: 'Week7', content: '最終発表準備、事業計画作成' }
-      // ]
-    }
+    return {}
   }
 }
 </script>

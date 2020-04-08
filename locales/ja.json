@@ -3,6 +3,15 @@
     "catch_copy": "コロナに負けるな!",
     "application_period": "応募期間"
   },
+  "concept": {
+    "title_1": "完全オンラインで行う",
+    "title_2": "ビジネスコンテスト",
+    "discription_1": "参加学生でチームを結成し、",
+    "discription_2": "企業からの課題テーマに取り組め！",
+    "discription_3": "サポートやフィードバックを得ながら、",
+    "discription_4": "解決案を提示しよう。"
+  },
+
   "information": {
     "theme": {
       "whom": "参加対象者",

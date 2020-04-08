@@ -35,8 +35,14 @@ export default {
       news_list: [
         {
           pub: true,
-          date: '2020/04/07',
+          date: '2020/04/08',
           title: 'オンコン公式Webサイトを公開しました。'
+        },
+        {
+          pub: true,
+          date: '2020/04/08',
+          title: '高専マガジンにご紹介いただきました！',
+          link: 'https://kosen-magazine.com/online-intern-contest-2020-report/'
         }
       ]
     }

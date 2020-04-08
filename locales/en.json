@@ -37,7 +37,16 @@
       ]
     }
   },
-
+  "schedule": {
+    "application": "application period",
+    "kickoff": "form a group of three, and receive the subject",
+    "final": "present online",
+    "schedules": [
+      { "data": "Step 1", "content": "ice-breaking, analyze the subject" },
+      { "data": "Step 2", "content": "coming up with idea" },
+      { "data": "Step 3", "content": "proposal of the solution" }
+    ]
+  },
   "information": {
     "theme": {
       "whom": "for whom",

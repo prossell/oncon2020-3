@@ -6,15 +6,15 @@
       .main_wrapper
         .application_period
           .application_period_date 4/8 ~ 4/16
-          .application_period_text 参加応募期間
+          .application_period_text {{ $t('schedule.application') }}
         .application_large
           Slant1Svg.slant.slant_1
           .application_large_date 4/17
           .application_large_text Kickoff
           .explanation
-            .explanation_text 3人1組チームとテーマの発表
+            .explanation_text {{ $t('schedule.kickoff') }}
         .contest_periods(v-if="$mq !== 'sm'")
-          .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`" :style="`padding-left: ${sch_key * 22.4}px`")
+          .contest_period(v-for="(sch, sch_key) in $t('schedule.schedules')" :key="`sch_${sch_key}`" :style="`padding-left: ${sch_key * 22.4}px`")
             .contest_period_date {{sch.data}}
             .contest_period_text {{sch.content}}
         .contest_periods(v-else)
@@ -26,7 +26,7 @@
           .application_large_date 4/24
           .application_large_text Final pitch
           .explanation.explanation--final
-            .explanation_text ビデオ通話で最終発表
+            .explanation_text {{ $t('schedule.final') }}
 
 
 </template>
@@ -46,11 +46,11 @@ export default {
   },
   data() {
     return {
-      schedules: [
-        { data: 'Step 1', content: 'アイスブレーク、本質的課題の確認' },
-        { data: 'Step 2', content: 'アイデア出し' },
-        { data: 'Step 3', content: '解決案の提示' }
-      ]
+      // schedules: [
+      //   { data: 'Step 1', content: 'アイスブレーク、本質的課題の確認' },
+      //   { data: 'Step 2', content: 'アイデア出し' },
+      //   { data: 'Step 3', content: '解決案の提示' }
+      // ]
       // schedules: [
       //   { data: 'Week1', content: 'アイスブレーク、本質的課題の確認' },
       //   { data: 'Week2', content: 'アイデア出し' },

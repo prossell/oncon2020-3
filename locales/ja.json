@@ -37,7 +37,16 @@
       ]
     }
   },
-
+  "schedule": {
+    "application": "参加応募期間",
+    "kickoff": "3人1組チームとテーマの発表",
+    "final": "ビデオ通話で最終発表",
+    "schedules": [
+      { "data": "Step 1", "content": "アイスブレーク、本質的課題の確認" },
+      { "data": "Step 2", "content": "アイデア出し" },
+      { "data": "Step 3", "content": "解決案の提示" }
+    ]
+  },
   "information": {
     "theme": {
       "whom": "参加対象者",

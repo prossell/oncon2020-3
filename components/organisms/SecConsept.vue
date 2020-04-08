@@ -8,12 +8,12 @@
         .consept
           .consept__box(v-if="$mq !== 'sm'")
           .consept__title
-            .consept__title__txt 完全オンラインで行う<br/>ビジネスコンテスト
+            .consept__title__txt {{ $t('concept.title_1') }}<br/>{{ $t('concept.title_2') }}
             //- TimesSvg.consept__title__times
             //-  .consept__title__txt インターンシップ
           .consept__discription
-            p 参加学生でチームを結成し、<br/>企業からの課題テーマに取り組め！
-            p サポートやフィードバックを得ながら、<br/>解決案を提示しよう。
+            p {{ $t('concept.discription_1') }}<br/>{{ $t('concept.discription_2') }}
+            p {{ $t('concept.discription_3') }}<br/>{{ $t('concept.discription_4') }}
             //- p 最終プレゼン後の評価で、優勝チームには賞金10万円！
 </template>
 <script>

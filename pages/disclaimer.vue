@@ -17,7 +17,8 @@
 </template>
 <script>
 // components
-import Disclaimer from '~/assets/disclaimer.md'
+import DisclaimerJa from '~/assets/disclaimer-ja.md'
+import DisclaimerEn from '~/assets/disclaimer-en.md'
 import HeaderMenu from '~/components/molecules/HeaderMenu.vue'
 import SubPageTopTitle from '~/components/atoms/SubPageTopTitle'
 import SectionTitle from '~/components/atoms/SectionTitle.vue'
@@ -37,12 +38,17 @@ export default {
   },
   data() {
     return {
-      agree: true
+      agree: false
     }
   },
   computed: {
     disclaimer() {
-      return Disclaimer
+      let disclaimerlang = DisclaimerJa
+      if (this.$i18n.locale === 'en') {
+        disclaimerlang = DisclaimerEn
+      }
+
+      return disclaimerlang
     }
   },
   methods: {

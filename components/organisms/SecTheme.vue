@@ -7,7 +7,6 @@
         .theme_list( v-for="(theme,theme_id) in $t('themes')" :key="`theme_${theme_id}`")
           .theme_number 0{{theme_id + 1}}
           .theme_wrapper
-            theme
             .theme_company {{ theme.company }}
             .theme_title {{ theme.title }}
 

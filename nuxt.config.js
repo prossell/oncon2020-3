@@ -3,9 +3,9 @@ export default {
   htmlAttrs: {
     prefix: 'og: http://ogp.me/ns#'
   },
-  titleTemplate: '%s - ONLINE INTERN CONTEST 2020',
+  titleTemplate: '%s - ONLINE INTERN CONTEST 2020 #2',
   head: {
-    title: 'ONLINE INTERN CONTEST 2020',
+    title: 'ONLINE INTERN CONTEST 2020 #2',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -13,25 +13,33 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'ビジネスコンテスト×インターンシップ。全く新しいオンラインコンテスト。参加学生でチームを結成し、企業からの課題テーマに取り組め！ 1月11日応募締切。#オンコン'
+          'ビジネスコンテスト×インターンシップ。完全オンラインで行うコンテスト。参加学生でチームを結成し、課題テーマに取り組め！ 4月16日応募締切。#コロナに負けるな'
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'ONLINE INTERN CONTEST 2020'
+        content: 'ONLINE INTERN CONTEST 2020 #2'
       },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:url', property: 'og:url', content: 'https://prossell.jp' },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://oncon2020-2.prossell.jp/'
+      },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'ONLINE INTERN CONTEST 2020'
+        content: 'ONLINE INTERN CONTEST 2020 #2'
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'ビジネスコンテスト×インターンシップ。全く新しいオンラインコンテスト。参加学生でチームを結成し、企業からの課題テーマに取り組め！ 1月11日応募締切。#オンコン'
+          'ビジネスコンテスト×インターンシップ。完全オンラインで行うコンテスト。参加学生でチームを結成し、課題テーマに取り組め！ 4月16日応募締切。#コロナに負けるな'
       },
       {
         hid: 'og:image',

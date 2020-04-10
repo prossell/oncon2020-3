@@ -82,6 +82,15 @@ export default {
   line-height: 1.8;
 }
 
+@media screen and (max-width: 1466px) {
+  .feature_content {
+    margin-top: -56px;
+  }
+  .OneFeature {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: $md) {
   .OneFeature {
     width: auto;

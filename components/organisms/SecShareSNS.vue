@@ -49,7 +49,7 @@ export default {
   data() {
     return {
       hashtag: 'オンコン',
-      facebook_id: '2518345798280802'
+      facebook_id: '218399332764411'
     }
   },
   methods: {

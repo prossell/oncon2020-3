@@ -83,7 +83,7 @@
     }
   ],
   "award": {
-    "property": "award ceremony",
+    "property": "ceremony",
     "content_1": "on video chatting service ",
     "content_2": ""
   },
@@ -100,5 +100,11 @@
     "please": "Please check before applying.",
     "agree": "Apply after agreeing to the above.",
     "toform": "To application form"
+  },
+  "about": {
+    "message": "Prossell is an ONCON(online contest) management team to make your job hunting successful."
+  },
+  "news": {
+    "message": "Latest information and updates about the ONCON(online contest)."
   }
 }

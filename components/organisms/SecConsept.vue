@@ -8,12 +8,16 @@
         .consept
           .consept__box(v-if="$mq !== 'sm'")
           .consept__title
-            .consept__title__txt {{ $t('concept.title_1') }}<br/>{{ $t('concept.title_2') }}
+            .consept__title__txt {{ $t('concept.title_1') }} <br/> {{ $t('concept.title_2') }}
             //- TimesSvg.consept__title__times
             //-  .consept__title__txt インターンシップ
           .consept__discription
-            p {{ $t('concept.discription_1') }}<br/>{{ $t('concept.discription_2') }}
-            p {{ $t('concept.discription_3') }}<br/>{{ $t('concept.discription_4') }}
+            p
+              span {{ $t('concept.discription_1') }} <br/>
+              span {{ $t('concept.discription_2') }}
+            p
+              span {{ $t('concept.discription_3') }} <br/>
+              span {{ $t('concept.discription_4') }}
             //- p 最終プレゼン後の評価で、優勝チームには賞金10万円！
 </template>
 <script>

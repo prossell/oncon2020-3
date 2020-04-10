@@ -10,7 +10,9 @@
           .award_txt__row
             .award_txt__row__property {{ $t('award.property') }}
             .award_txt__row__contents
-              p {{ $t('award.content_1') }}<a href="https://zoom.us/jp-jp/meetings.html">Zoom</a>{{ $t('award.content_2') }}
+              p {{ $t('award.content_1') }}
+                a(href="https://zoom.us/jp-jp/meetings.html") Zoom
+                span {{ $t('award.content_2') }}
               //- p 優秀者には交通費・宿泊費等、上限2万円の支給
           //- .award_txt__row
           //-   .award_txt__row__property 賞

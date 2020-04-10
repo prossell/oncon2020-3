@@ -5,9 +5,9 @@
       .main_wrapper
         .share_contents
           .share_contents__title
-            | {{ $t('share.title_1') }}
+            span {{ $t('share.title_1') }}
             span.title_black {{ $t('share.title_black') }}
-            | {{ $t('share.title_2') }}
+            span {{ $t('share.title_2') }}
           .share_contents__links
             TwitterSvg(@click="ShereSNS('twitter')" alt="Twitter").share_link
             FacebookSvg(@click="ShereSNS('facebook')" alt="Facebook").share_link

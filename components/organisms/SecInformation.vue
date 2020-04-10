@@ -18,7 +18,8 @@
         .information_list.management
           p.information_list_theme {{ $t('information.theme.powered_by') }}
           p.information_list_content
-            span.information_list_content--sponsor {{ $t('information.content.powered_by') }}
+            span.information_list_content--sponsor
+              span {{ $t('information.content.powered_by') }}
               nuxt-link(to="/about") Prossell
             //- span.information_list_content--coorporate 協力：
             //-   a(href = "https://kosen-career.tech/") 高専キャリア

@@ -17,6 +17,7 @@ $shift: 34.4px;
     width: 200px;
     flex-grow: 0;
     flex-shrink: 0;
+    text-indent: -1.2rem;
   }
 
   &_content {
@@ -60,6 +61,7 @@ $shift: 34.4px;
   .information_list{
     &_theme {
       font-size: 2.8rem;
+      text-indent: -1.2rem;
     }
   }
 }
@@ -72,7 +74,7 @@ $shift: 34.4px;
     display: block;
     &_theme {
       font-size: 2.6rem;
-      width: 160px;
+      width: 240px;
     }
     &_content {
       padding-left: 1em;

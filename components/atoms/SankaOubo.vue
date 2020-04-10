@@ -3,7 +3,7 @@
     nuxt-link(to="/disclaimer").application_btn
       SankaouboSvg.sankaoubo(v-if="this.$i18n.locale === 'ja'")
       .sankaoubo(v-if="this.$i18n.locale === 'en'")
-        .enfont Apply for this event
+        .enfont Apply!
 
 </template>
 <script>
@@ -42,9 +42,9 @@ export default {
   color: $theme-green;
   text-align: center;
   font-family: $noto-sans;
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   background: -webkit-linear-gradient(60deg, $theme-green, $theme-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,16 +56,16 @@ export default {
     height: 5vw;
   }
   .sankaoubo {
-    width: 24vw;
+    width: 60%;
   }
   .enfont {
-    font-size: 2rem;
+    font-size: 3.2rem;
   }
 }
 
 @media screen and (max-width: $tb) {
   .enfont {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -76,10 +76,10 @@ export default {
     height: 52px;
   }
   .sankaoubo {
-    width: 75%;
+    width: 45%;
   }
   .enfont {
-    font-size: 2rem;
+    font-size: 3.2rem;
   }
 }
 </style>

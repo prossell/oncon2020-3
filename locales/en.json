@@ -42,7 +42,7 @@
   },
   "schedule": {
     "application": "application period",
-    "kickoff": "form a group of three, and receive the subject",
+    "kickoff": "form a group, and receive the subject",
     "final": "present online",
     "schedules": [
       { "data": "Step 1", "content": "ice-breaking, analyze the subject" },

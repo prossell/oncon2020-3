@@ -3,13 +3,13 @@
     HeaderMenu()
     SubPageTopTitle(:title="'News'")
     .container
-      .news_message オンコン(略称)に関する最新情報や更新情報をお届けします。
+      .news_message  {{ $t('news.message') }}
       .wrapper
         .news_list
           .news(v-for="(news, news_key) in latestNews" :key="`news_${news_key}`" v-if="news.pub")
               .news_wrapper
                 a.title(v-if="news.link" :href="news.link") {{news.title}}
-                .title(v-else) {{news.title}}
+                .title(v-else ) {{news.title}}
                 .date {{news.date}}
               .news_detaile {{news.detaile}}
         .twitter_timeline
@@ -36,14 +36,17 @@ export default {
         {
           pub: true,
           date: '2020/04/08',
-          title: 'オンコン公式Webサイトを公開しました。'
+          title: 'オンコン公式Webサイトを公開しました。',
+          title_en: 'ONCON official website is disclosed.'
         },
         {
           pub: true,
           date: '2020/04/08',
           title: '高専マガジンに掲載されました！',
-          link: 'https://kosen-magazine.com/online-intern-contest-2020-report/',
-          detaile: '前回の参加レポートをまとめております'
+          detaile: '前回の参加レポートをまとめております',
+          title_en: 'Published in Kosen Magazine',
+          detaile_en: 'Previous participation report',
+          link: 'https://kosen-magazine.com/online-intern-contest-2020-report/'
         }
       ]
     }
@@ -51,6 +54,13 @@ export default {
   computed: {
     latestNews() {
       return [...this.news_list].reverse()
+    },
+    change_lang() {
+      let lang = ''
+      if (this.$i18n.locale === 'en') {
+        lang = 'en'
+      }
+      return lang
     }
   },
   head() {

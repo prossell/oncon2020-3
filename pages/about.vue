@@ -3,20 +3,24 @@
     HeaderMenu()
     SubPageTopTitle(:title="'About Prossell'")
     .container
-      .about_message Prossellとは、就活をより良いものにするために集まった学生によるオンコン(略称)運営チームです。
+      .about_message {{ $t('about.message') }}
     SectionTitle(:title="'Members'")
     .container
       .main_wrapper
         .members_list
           .member_wrapper(v-for="(mem,mem_key) in members" :key="`men_${mem_key}`")
             a.member_link(v-if="mem.link" :href="mem.link")
-              .member_role(v-if="mem.role") {{mem.role}}
+              .member_role(v-if="change_lang ==! 'en'") {{mem.role}}
+              .member_role(v-else="change_lang === 'en'") {{mem.role_en}}
               img.member_icon(v-if="mem.icon" :src="require(`~/assets/member_imgs/${mem.icon}.png`)")
-              .member_name {{mem.name}}
+              .member_name(v-if="change_lang ==! 'en'")  {{mem.name}} 
+              .member_name(v-else="change_lang ==='en'") {{mem.name_en}} 
             .member_no_link(v-else)
               .member_role(v-if="mem.role") {{mem.role}}
+              .member_role(v-else="mem.role === 'en'") {{mem.role_en}}
               img.member_icon(v-if="mem.icon" :src="require(`~/assets/member_imgs/${mem.icon}.png`)")
-              .member_name {{mem.name}}
+              .member_name(v-if="change_lang ==! 'en'")  {{mem.name}} 
+              .member_name(v-else="change_lang ==='en'") {{mem.name_en}} 
     //- PosterDownload
     Footer
 </template>
@@ -41,36 +45,62 @@ export default {
       members: [
         {
           icon: 'yokoyama_kazuki',
-          name: '横山和輝(kiki)',
+          name: '横山 和輝(kiki)',
+          name_en: 'Kazuki Yokoyama(kiki)',
           role: '運営代表',
+          role_en: 'CEO',
           link: 'https://twitter.com/Kiki_Prossell'
         },
         {
           icon: 'kantaro',
-          name: '吉村勘太郎',
+          name: '吉村 勘太郎',
+          name_en: 'Kantaro Yoshimura',
+          role: '.',
+          role_en: '.',
           link: 'https://www.facebook.com/yoka0930'
         },
         {
           icon: 'hiroyuki_saito',
-          name: '齋藤',
+          name: '齋藤 祐功',
+          name_en: 'Hiroyuki Saito',
+          role: '',
+          role_en: '',
           link: 'https://www.facebook.com/bigbosshiro'
         },
         {
           icon: 'chige',
-          name: '内田啓太(ちげ)',
+          name: '内田 啓太(ちげ)',
+          name_en: 'Keita Uchida(Chige)',
+          role: '',
+          role_en: '',
           link: 'https://twitter.com/chige12_'
         },
         {
           icon: 'miyaji',
-          name: '宮地篤士',
+          name: '宮地 篤士',
+          name_en: 'Atsushi Miyaji',
+          role: '',
+          role_en: '',
           link: 'https://www.facebook.com/atsushi.miyaji.0226'
         },
         {
           icon: 'otani',
-          name: '大谷俊介',
+          name: '大谷 俊介',
+          name_en: 'Shunsuke Otani',
+          role: '',
+          role_en: '',
           link: 'https://www.facebook.com/moyashi12f'
         }
       ]
+    }
+  },
+  computed: {
+    change_lang() {
+      let lang = ''
+      if (this.$i18n.locale === 'en') {
+        lang = 'en'
+      }
+      return lang
     }
   },
   head() {

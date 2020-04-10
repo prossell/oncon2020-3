@@ -32,12 +32,10 @@ export default {
     }
   }
 }
-
 .sankaoubo {
   transition: 0.4s $ease-out-1;
   width: 260px;
 }
-
 .enfont {
   color: $theme-green;
   text-align: center;
@@ -49,7 +47,6 @@ export default {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 @media screen and (max-width: $md) {
   .application_btn {
     width: 30vw;
@@ -62,13 +59,11 @@ export default {
     font-size: 2rem;
   }
 }
-
 @media screen and (max-width: $tb) {
   .enfont {
     font-size: 1.8rem;
   }
 }
-
 @media screen and (max-width: $sm) {
   .application_btn {
     margin: auto;

@@ -103,9 +103,61 @@
     "toform": "To application form"
   },
   "about": {
-    "message": "Prossell is an ONCON(online contest) management team to make your job hunting successful."
+    "message": "Prossell is an ONCON(online contest) management team to make your job hunting successful.",
+    "members": [
+      {
+        "icon": "yokoyama_kazuki",
+        "name": "Kazuki Yokoyama(kiki)",
+        "role": "CEO",
+        "link": "https://twitter.com/Kiki_Prossell"
+      },
+      {
+        "icon": "kantaro",
+        "name": "Kantaro Yoshimura",
+        "role": "",
+        "link": "https://www.facebook.com/yoka0930"
+      },
+      {
+        "icon": "hiroyuki_saito",
+        "name": "Hiroyuki Saito",
+        "role": "",
+        "link": "https://www.facebook.com/bigbosshiro"
+      },
+      {
+        "icon": "chige",
+        "name": "Keita Uchida(Chige)",
+        "role": "",
+        "link": "https://twitter.com/chige12_"
+      },
+      {
+        "icon": "miyaji",
+        "name": "Atsushi Miyaji",
+        "role": "",
+        "link": "https://www.facebook.com/atsushi.miyaji.0226"
+      },
+      {
+        "icon": "otani",
+        "name": "Shunsuke Otani",
+        "role": "",
+        "link": "https://www.facebook.com/moyashi12f"
+      }
+    ]
   },
   "news": {
-    "message": "Latest information and updates about the ONCON(online contest)."
+    "message": "Latest information and updates about the ONCON(online contest).",
+    "news_list": [
+      {
+        "pub": "true",
+        "date": "2020/04/08",
+        "title": "ONCON official website is disclosed."
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/08",
+        "title": "Published in Kosen Magazine",
+        "detaile": "Previous participation report (Japanese Only)",
+        "link": "https://kosen-magazine.com/online-intern-contest-2020-report/"
+      }
+    ]
   }
 }

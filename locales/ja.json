@@ -103,9 +103,66 @@
     "toform": "応募フォームへ"
   },
   "about": {
-    "message": "  Prossellとは、就活をより良いものにするために集まった学生によるオンコン(略称)運営チームです。"
+    "message": "  Prossellとは、就活をより良いものにするために集まった学生によるオンコン(略称)運営チームです。",
+    "members": [
+      {
+        "icon": "yokoyama_kazuki",
+        "name": "横山 和輝(kiki)",
+        "role": "運営代表",
+        "role_en": "CEO",
+        "link": "https://twitter.com/Kiki_Prossell"
+      },
+      {
+        "icon": "kantaro",
+        "name": "吉村 勘太郎",
+        "role": ".",
+        "link": "https://www.facebook.com/yoka0930"
+      },
+      {
+        "icon": "hiroyuki_saito",
+        "name": "齋藤 祐功",
+        "role": "",
+        "link": "https://www.facebook.com/bigbosshiro"
+      },
+      {
+        "icon": "chige",
+        "name": "内田 啓太(ちげ)",
+        "role": "",
+        "link": "https://twitter.com/chige12_"
+      },
+      {
+        "icon": "miyaji",
+        "name": "宮地 篤士",
+        "name_en": "Atsushi Miyaji",
+        "role": "",
+        "role_en": "",
+        "link": "https://www.facebook.com/atsushi.miyaji.0226"
+      },
+      {
+        "icon": "otani",
+        "name": "大谷 俊介",
+        "name_en": "Shunsuke Otani",
+        "role": "",
+        "role_en": "",
+        "link": "https://www.facebook.com/moyashi12f"
+      }
+    ]
   },
   "news": {
-    "message": "  オンコン(略称)に関する最新情報や更新情報をお届けします。"
+    "message": "  オンコン(略称)に関する最新情報や更新情報をお届けします。",
+    "news_list": [
+      {
+        "pub": "true",
+        "date": "2020/04/08",
+        "title": "オンコン公式Webサイトを公開しました。"
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/08",
+        "title": "高専マガジンに掲載されました！",
+        "detaile": "前回の参加レポートをまとめております",
+        "link": "https://kosen-magazine.com/online-intern-contest-2020-report/"
+      }
+    ]
   }
 }

@@ -84,7 +84,7 @@ $slant_2-left: calc((3 * 23px) + 32px );
 }
 
 .explanation {
-  @include absolute($right: calc(40% - 200px), $bottom: 16px);
+  @include absolute($right: calc(40% - 240px), $bottom: 16px);
   padding: 8px 24px 12px;
   margin-left: auto;
   background-color: $black;
@@ -92,7 +92,7 @@ $slant_2-left: calc((3 * 23px) + 32px );
     color: $white;
   }
   &--final {
-    @include absolute($right: calc(-6 * 23px + (40% - 200px)), $bottom: 16px);
+    @include absolute($right: calc(-3 * 23px + (40% - 240px)), $bottom: 16px);
   }
 }
 
@@ -127,9 +127,9 @@ $slant_2-left: calc((3 * 23px) + 32px );
     font-size: 1.8rem;
   }
   .explanation {
-    right: calc(60% - 352px);
+    right: calc(60% - 400px);
     &--final {
-      right: calc(-6 * 23px + (60% - 352px));
+      right: calc(-3 * 23px + (60% - 344px));
     }
   }
 }
@@ -231,7 +231,7 @@ $slant_2-left: calc((3 * 23px) + 32px );
       margin-left: 16px;
     }
     &_time{
-      @include absolute($left:20px, $bottom: -20px);
+      @include absolute($left:20px, $bottom: -36px);
       font-size: 1.6rem;
     }
 
@@ -259,6 +259,7 @@ $slant_2-left: calc((3 * 23px) + 32px );
   }
   .contest_periods {
     padding-bottom: 8px;
+    padding: 32px 0 8px;
   }
 
   .contest_period{
@@ -287,7 +288,10 @@ $slant_2-left: calc((3 * 23px) + 32px );
     .explanation{
       right: unset;
       left: 8px;
-      bottom: -16px;
+      bottom: -12px;
+      &_text {
+        font-size: 1.2rem;
+      }
     }
   }
 }

@@ -46,7 +46,7 @@ export default {
         property: 'og:image',
         content: 'https://prossell.jp/img/OGP.png'
       },
-      { property: 'fb:app_id', content: '2518345798280802' },
+      { property: 'fb:app_id', content: '218399332764411' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@Prossell_JP' }
     ],

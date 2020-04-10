@@ -4,7 +4,7 @@
     FacebookSvg(@click="ShereSNS('facebook')" alt="Facebook").top_sns_icon
     LineSvg(@click="ShereSNS('line')" alt="LINE").top_sns_icon
     .recommend_share(:class="{'recommend_share--open':recommend}")
-      .recommend_share__text SNSでシェア!
+      .recommend_share__text {{ $t('index.sns_share') }}
 </template>
 <script>
 // 一番上ヘッダーメニューに出て来るシェアボタン

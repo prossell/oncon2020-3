@@ -1,15 +1,15 @@
 {
   "index": {
     "catch_copy": "Overcome CORONA!",
-    "application_period": "application period",
+    "application_period": "Application period",
     "sns_share": "Share!"
   },
   "concept": {
-    "title_1": "in this business-contest,",
+    "title_1": "In this business-contest,",
     "title_2": "everything is online",
-    "discription_1": "you will form a group with other participants, and tackle a subject theme offered by a company! ",
+    "discription_1": "You will form a group with other participants, and tackle a subject theme offered by a company! ",
     "discription_2": "",
-    "discription_3": "present your solution given our support and feedback.",
+    "discription_3": "Present your solution given our support and feedback.",
     "discription_4": ""
   },
   "feature": {
@@ -54,13 +54,13 @@
   "information": {
     "theme": {
       "whom": "for whom",
-      "what_evaluate": "what are evaluated",
-      "who_evaluate": "who will evaluate",
+      "what_evaluate": "evaluation",
+      "who_evaluate": "evaluator",
       "powered_by": "powered by"
     },
     "content": {
       "whom": "University, Graduate school, High school, Vocational school and College of technology students",
-      "what_evaluate_1": "reality, social commitment, growth of the market,",
+      "what_evaluate_1": "Reality, social commitment, growth of the market,",
       "what_evaluate_2": "originality, and schedule progress",
       "caution": "task progress based on schedule is also evaluated",
       "who_evaluate": "To be announced",
@@ -80,7 +80,7 @@
   "themes": [
     {
       "company": "Prossell",
-      "title": "aconsider after corona and with corona world"
+      "title": "consider after corona and with corona world"
     }
   ],
   "award": {

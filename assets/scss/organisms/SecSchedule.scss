@@ -231,7 +231,7 @@ $slant_2-left: calc((3 * 23px) + 32px );
       margin-left: 16px;
     }
     &_time{
-      @include absolute($left:20px, $bottom: -36px);
+      @include absolute($left:20px, $bottom: -24px);
       font-size: 1.6rem;
     }
 
@@ -284,6 +284,9 @@ $slant_2-left: calc((3 * 23px) + 32px );
     margin-bottom: 10px;
     &::before{
       height: 40px;
+    }
+    &_time {
+      @include absolute($left:20px, $bottom: -36px);
     }
     .explanation{
       right: unset;

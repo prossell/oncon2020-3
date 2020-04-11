@@ -6,7 +6,7 @@
       .news_message  {{ $t('news.message') }}
       .wrapper
         .news_list
-          .news(v-for="(news, news_key) in latestNews" :key="`news_${news_key}`" v-if="news.pub")
+          .news(v-for="(news, news_key) in $t('news.news_list') " :key="`news_${news_key}`" v-if="news.pub")
               .news_wrapper
                 a.title(v-if="news.link" :href="news.link") {{news.title}}
                 .title(v-else ) {{news.title}}
@@ -30,43 +30,10 @@ export default {
     SectionTitle,
     Footer
   },
-  data() {
-    return {
-      news_list: [
-        {
-          pub: true,
-          date: '2020/04/08',
-          title: 'オンコン公式Webサイトを公開しました。',
-          title_en: 'ONCON official website is disclosed.'
-        },
-        {
-          pub: true,
-          date: '2020/04/08',
-          title: '高専マガジンに掲載されました！',
-          detaile: '前回の参加レポートをまとめております',
-          title_en: 'Published in Kosen Magazine',
-          detaile_en: 'Previous participation report',
-          link: 'https://kosen-magazine.com/online-intern-contest-2020-report/'
-        }
-      ]
-    }
-  },
-  computed: {
-    latestNews() {
-      return [...this.news_list].reverse()
-    },
-    change_lang() {
-      let lang = ''
-      if (this.$i18n.locale === 'en') {
-        lang = 'en'
-      }
-      return lang
-    }
-  },
   head() {
     return {
       title: 'News',
-      titleTemplate: '%s - ONLINE INTERN CONTEST 2020'
+      titleTemplate: '%s - ONLINE INTERN CONTEST 2020 #2'
     }
   }
 }

@@ -14,6 +14,7 @@
     SecTheme
     SecAward
     SecShareSNS
+    SecSupporters
     SecSponsors
     SecPastEvent
     Footer
@@ -34,6 +35,7 @@ import SecVision from '~/components/organisms/SecVision.vue'
 import SecTheme from '~/components/organisms/SecTheme.vue'
 import SecAward from '~/components/organisms/SecAward.vue'
 import SecShareSNS from '~/components/organisms/SecShareSNS.vue'
+import SecSupporters from '~/components/organisms/SecSupporters.vue'
 import SecSponsors from '~/components/organisms/SecSponsors.vue'
 import SecPastEvent from '~/components/organisms/SecPastEvent.vue'
 import Footer from '~/components/organisms/Footer.vue'
@@ -52,6 +54,7 @@ export default {
     SecTheme,
     SecAward,
     SecShareSNS,
+    SecSupporters,
     SecSponsors,
     SecPastEvent,
     Footer,

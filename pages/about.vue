@@ -17,7 +17,7 @@
               .member_role(v-if="mem.role") {{mem.role}}
               img.member_icon(v-if="mem.icon" :src="require(`~/assets/member_imgs/${mem.icon}.png`)")
               .member_name {{mem.name}} 
-    //- PosterDownload
+    PosterDownload
     Footer
 </template>
 <script>

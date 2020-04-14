@@ -6,7 +6,8 @@
         .supporter_box(v-for="(sup, sup_key) in supporters" :key="`sup_key${sup_key}`")
           a(:href="sup.link")
             img.sup_logo(v-if="sup.logo" :src="require(`~/assets/sponsor_imgs/${sup.logo}.png`)")
-            .supporter_name {{sup.name}}
+            .supporter_name(v-if="$i18n.locale === 'ja'") {{sup.jaName}}
+            .supporter_name(v-else) {{sup.enName}}
 </template>
 <script>
 import SectionTitle from '~/components/atoms/SectionTitle.vue'
@@ -22,7 +23,8 @@ export default {
         {
           link: 'https://dena.com/jp/',
           logo: 'dena',
-          name: '株式会社ディー・エヌ・エー'
+          jaName: '株式会社ディー・エヌ・エー',
+          enName: 'DeNA Co., Ltd.'
         }
       ]
     }

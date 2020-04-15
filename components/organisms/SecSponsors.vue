@@ -6,17 +6,19 @@
         .sponsor_box(v-for="(spA, spA_key) in sponsors_A" :key="`spA_key${spA_key}`").plan_A
           a(:href="spA.link")
             img.sp_logo(v-if="spA.logo" :src="require(`~/assets/sponsor_imgs/${spA.logo}.png`)")
-            .sponsor_name <span>Plan A</span> {{spA.name}}
-      .sponsors_list(v-if="sponsors_B")
-        .sponsor_box(v-for="(spB, spB_key) in sponsors_B" :key="`spB_key${spB_key}`").plan_B
-          a(:href="spB.link")
-            img.sp_logo(v-if="spB.logo" :src="require(`~/assets/sponsor_imgs/${spB.logo}.png`)")
-            .sponsor_name <span>Plan B</span> {{spB.name}}
-      .sponsors_list(v-if="sponsors_C")
-        .sponsor_box(v-for="(spC, spC_key) in sponsors_C" :key="`spC_key${spC_key}`").plan_C
-          a(:href="spC.link")
-            img.sp_logo(v-if="spC.logo" :src="require(`~/assets/sponsor_imgs/${spC.logo}.png`)")
-            .sponsor_name <span>Plan C</span> {{spC.name}}
+            //- .sponsor_name <span>Plan A</span> {{spA.name}}
+            .sponsor_name(v-if="$i18n.locale === 'ja'") {{spA.janame}}
+            .sponsor_name(v-else) {{spA.enname}}
+      //- .sponsors_list(v-if="sponsors_B")
+      //-   .sponsor_box(v-for="(spB, spB_key) in sponsors_B" :key="`spB_key${spB_key}`").plan_B
+      //-     a(:href="spB.link")
+      //-       img.sp_logo(v-if="spB.logo" :src="require(`~/assets/sponsor_imgs/${spB.logo}.png`)")
+      //-       .sponsor_name <span>Plan B</span> {{spB.name}}
+      //- .sponsors_list(v-if="sponsors_C")
+      //-   .sponsor_box(v-for="(spC, spC_key) in sponsors_C" :key="`spC_key${spC_key}`").plan_C
+      //-     a(:href="spC.link")
+      //-       img.sp_logo(v-if="spC.logo" :src="require(`~/assets/sponsor_imgs/${spC.logo}.png`)")
+      //-       .sponsor_name <span>Plan C</span> {{spC.name}}
 
     .container(v-else)
       nuxt-link(to="/")
@@ -41,63 +43,17 @@ export default {
   },
   data() {
     return {
-      publish: false,
+      publish: true,
       sponsors_A: [
         {
-          link: 'https://fuller-inc.com/',
-          logo: 'fuller',
-          name: 'フラー株式会社'
-        },
-        {
-          link: 'https://kosen-career.tech/',
-          logo: 'kosen_career',
-          name: '株式会社 高専キャリア教育研究所'
-        },
-        {
-          link: 'https://www.jinzainews.jp',
-          logo: 'zinzai_news',
-          name: '人材ニュース株式会社'
+          link: 'https://www.excite.co.jp/',
+          logo: 'excite',
+          janame: 'エキサイト株式会社',
+          enname: 'Excite Japan Co., Ltd.'
         }
       ],
-      sponsors_B: [
-        {
-          link: 'https://sprix.jp',
-          logo: 'sprix',
-          name: '株式会社スプリックス'
-        },
-        {
-          link: 'http://www.kasacon.co.jp',
-          logo: 'kasahara',
-          name: '株式会社笠原建設'
-        },
-        {
-          link: 'https://www.system-square.com/',
-          logo: 'system_square',
-          name: '株式会社システムスクエア'
-        }
-      ],
-      sponsors_C: [
-        {
-          link: 'http://k-matsui-gumi.co.jp/',
-          logo: 'matuigumi',
-          name: '株式会社 松井組'
-        },
-        {
-          link: 'https://itachi.co.jp/',
-          logo: 'itachi',
-          name: '株式会社イタチ'
-        },
-        {
-          link: 'https://csllc.co.jp/',
-          logo: 'cs',
-          name: 'CS合同会社（CS.llc）'
-        },
-        {
-          link: 'https://www.nihon-samicon.co.jp/',
-          logo: 'samicon',
-          name: '日本サミコン株式会社'
-        }
-      ]
+      sponsors_B: [{}],
+      sponsors_C: [{}]
     }
   }
 }
@@ -151,11 +107,11 @@ export default {
   }
 }
 
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-}
+// a,
+// a:link,
+// a:visited {
+//   text-decoration: none;
+// }
 @media screen and (max-width: $md) {
   .sponsor_box {
     padding: 4px;

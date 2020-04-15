@@ -25,6 +25,12 @@ export default {
           logo: 'dena',
           jaName: '株式会社ディー・エヌ・エー',
           enName: 'DeNA Co., Ltd.'
+        },
+        {
+          link: 'https://kosen-career.tech/',
+          logo: 'kosen_career',
+          jaName: '株式会社 高専キャリア教育研究所',
+          enName: 'Kosen Career Co., Ltd.'
         }
       ]
     }

@@ -14,8 +14,8 @@
     SecTheme
     SecAward
     SecShareSNS
-    SecSupporters
     SecSponsors
+    SecSupporters
     SecPastEvent
     Footer
 </template>

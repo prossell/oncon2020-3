@@ -4,7 +4,9 @@
     SubPageTopTitle(:title="'Rules'")
     .container
       .main_wrapper
-        //- BoshushuryoSvg
+        BoshushuryoSvg.boshushuryo(v-if="this.$i18n.locale === 'ja'")
+        .boshushuryo(v-if="this.$i18n.locale === 'en'")
+          .enfont Application have been closed
         .disclaimer_box
           .disclaimer_box_title: p {{ $t('disclaimer.please') }}
           .disclaimer_box_txt(v-html="disclaimer")
@@ -53,8 +55,8 @@ export default {
   },
   methods: {
     toggleAgreement() {
-      // this.$scrollTo('#top')
-      this.agree = this.agree !== true
+      this.$scrollTo('#top')
+      // this.agree = this.agree !== true
     },
     goToForm() {
       window.location.href =
@@ -72,6 +74,17 @@ export default {
 <style lang="scss" scoped>
 .main_wrapper {
   text-align: center;
+}
+.enfont {
+  color: $theme-green;
+  text-align: center;
+  font-family: $noto-sans;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 7.2rem;
+  background: -webkit-linear-gradient(60deg, $theme-green, $theme-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .disclaimer_box {
   position: relative;
@@ -116,7 +129,7 @@ export default {
   }
 }
 .disclaimer_checkbox {
-  // opacity: 0.3;
+  opacity: 0.3;
 
   margin: 64px auto;
   @include flex($justifyContent: center);
@@ -176,6 +189,12 @@ export default {
   outline: none;
 }
 
+@media screen and (max-width: 1500px) {
+  .enfont {
+    font-size: 5.6rem;
+  }
+}
+
 @media screen and (max-width: $md) {
   .disclaimer_box {
     margin-top: 64px;
@@ -190,7 +209,17 @@ export default {
   .disclaimer_checkbox {
     font-size: 1.9rem;
   }
+  .enfont {
+    font-size: 4rem;
+  }
 }
+
+@media screen and (max-width: 780px) {
+  .enfont {
+    font-size: 3.2rem;
+  }
+}
+
 @media screen and (max-width: $sm) {
   .disclaimer_box {
     padding: 50px 16px;

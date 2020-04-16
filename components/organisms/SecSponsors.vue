@@ -1,6 +1,6 @@
 <template lang="pug">
   .SecSponsors#sponsors
-    SectionTitle(:title="'Sponsors'")
+    SectionTitle(:title="'Sponsor'")
     .container(v-if="publish")
       .sponsors_list(v-if="sponsors_A")
         .sponsor_box(v-for="(spA, spA_key) in sponsors_A" :key="`spA_key${spA_key}`").plan_A
@@ -50,7 +50,8 @@ export default {
           logo: 'excite',
           janame: 'エキサイト株式会社',
           enname: 'Excite Japan Co., Ltd.'
-        }
+        },
+        {}
       ],
       sponsors_B: [{}],
       sponsors_C: [{}]
@@ -68,7 +69,7 @@ export default {
   margin-bottom: 36px;
 }
 .plan_A {
-  width: 50%;
+  width: 60%;
 }
 .plan_B {
   width: 33.3333%;

@@ -21,8 +21,8 @@
             span.information_list_content--sponsor
               span {{ $t('information.content.powered_by') }}
               nuxt-link(to="/about") Prossell
-            //- span.information_list_content--coorporate 協力：
-            //-   a(href = "https://kosen-career.tech/") 高専キャリア
+            span.information_list_content--coorporate 協力：
+              a(href = "https://n-wakamonokikou.net/") ながおか・若者・しごと機構
 
 </template>
 <script>

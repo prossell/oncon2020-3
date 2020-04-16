@@ -2,7 +2,8 @@
   "index": {
     "catch_copy": "コロナに負けるな!",
     "application_period": "応募期間",
-    "sns_share": "SNSでシェア！"
+    "sns_share": "SNSでシェア！",
+    "footer": "若者提案プロジェト補助金活用事業"
   },
   "concept": {
     "title_1": "完全オンラインで行う",
@@ -64,7 +65,9 @@
       "what_evaluate_2": "独創性、スケジュール達成度",
       "caution": "スケジュールに沿ったタスクの達成率も評価に加味されます。",
       "who_evaluate": "未定",
-      "powered_by": "主催："
+      "powered_by": "主催：",
+      "coorporate": "協力：",
+      "coorporater": "ながおか・若者・しごと機構"
     }
   },
   "vision": {
@@ -160,8 +163,33 @@
         "pub": "true",
         "date": "2020/04/08",
         "title": "高専マガジンに掲載されました！",
-        "detaile": "前回の参加レポートをまとめております",
+        "detaile": "前回の参加レポートをまとめております。",
         "link": "https://kosen-magazine.com/online-intern-contest-2020-report/"
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/15",
+        "title": "サポーター企業の公開",
+        "detaile": "(株)DeNA様"
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/16",
+        "title": "スポンサー企業の公開",
+        "detaile": "エキサイト(株)様"
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/16",
+        "title": "サポーター企業の追加",
+        "detaile": "(株)高専キャリア教育研究所様、(株)アカデミックギャングスター様"
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/16",
+        "title": "審査員(Judges)ページの公開",
+        "detaile": "審査員およびメンターの方々の紹介をしております。",
+        "link": "/judges"
       }
     ]
   }

@@ -2,6 +2,7 @@
   .Footer
     .container
       .before_footer
+        .wakamono {{ $t('index.footer') }}
         .totop
           TopSvg(@click="scrollToTop()").totop_svg
     footer.footer_background

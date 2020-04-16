@@ -2,7 +2,8 @@
   "index": {
     "catch_copy": "Overcome CORONA!",
     "application_period": "Application period",
-    "sns_share": "Share!"
+    "sns_share": "Share!",
+    "footer": "Youth proposal project grants"
   },
   "concept": {
     "title_1": "In this business-contest,",
@@ -64,7 +65,9 @@
       "what_evaluate_2": "originality, and schedule progress",
       "caution": "task progress based on schedule is also evaluated",
       "who_evaluate": "To be announced",
-      "powered_by": ""
+      "powered_by": "",
+      "coorporate": "Coorporate：",
+      "coorporater": "Nagaoka Working Organization for the Youth"
     }
   },
   "vision": {
@@ -149,14 +152,39 @@
       {
         "pub": "true",
         "date": "2020/04/08",
-        "title": "ONCON official website is disclosed."
+        "title": "ONCON Official Website Was Launched."
       },
       {
         "pub": "true",
         "date": "2020/04/08",
-        "title": "Published in Kosen Magazine",
-        "detaile": "Previous participation report (Japanese Only)",
+        "title": "Report Published in Kosen Magazine",
+        "detaile": "Report from a previous participant (Japanese Only)",
         "link": "https://kosen-magazine.com/online-intern-contest-2020-report/"
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/15",
+        "title": "Introduction of Suportors",
+        "detaile": "DeNA Co., Ltd."
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/16",
+        "title": "Introduction of Sponsor",
+        "detaile": "Excite Japan Co., Ltd."
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/16",
+        "title": "New Suportors",
+        "detaile": "Kosen Career Co., Ltd., Academic Gangstar Co., Ltd."
+      },
+      {
+        "pub": "true",
+        "date": "2020/04/16",
+        "title": "Add Judges page",
+        "detaile": "Introduction of the judges and mentors (Japanese Only)",
+        "link": "/judges"
       }
     ]
   }

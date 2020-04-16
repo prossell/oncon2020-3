@@ -37,6 +37,7 @@ export default {
       menu: false,
       links: [
         { to: './about', name: 'About' },
+        { to: './judges', name: 'Judges' },
         { to: './news', name: 'News' }
         // { to: '/corporates', name: '企業の方へ' }
       ]

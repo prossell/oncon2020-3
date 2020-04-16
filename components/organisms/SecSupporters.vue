@@ -1,6 +1,6 @@
 <template lang="pug">
   .SecSupporters#supporters
-    SectionTitle(:title="'Supporter'")
+    SectionTitle(:title="'Supporters'")
     .container(v-if="publish")
       .supporters_list(v-if="supporters")
         .supporter_box(v-for="(sup, sup_key) in supporters" :key="`sup_key${sup_key}`")
@@ -25,6 +25,18 @@ export default {
           logo: 'dena',
           jaName: '株式会社ディー・エヌ・エー',
           enName: 'DeNA Co., Ltd.'
+        },
+        {
+          link: 'https://kosen-career.tech/',
+          logo: 'kosen_career',
+          jaName: '株式会社 高専キャリア教育研究所',
+          enName: 'Kosen Career Co., Ltd.'
+        },
+        {
+          link: 'https://academic-gangstar.com/',
+          logo: 'academic_gangstar',
+          jaName: '株式会社 アカデミックギャングスター',
+          enName: 'Academic Gangstar Co., Ltd.'
         }
       ]
     }
@@ -70,5 +82,27 @@ export default {
   //   font-size: 1.5rem;
   //   padding-right: 12px;
   // }
+}
+
+@media screen and (max-width: $md) {
+  .supporter_box {
+    padding: 4px;
+  }
+  .supporter_name {
+    font-size: 1.6rem;
+    span {
+      font-size: 1.3rem;
+      padding-right: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .supporter_box {
+    width: 100%;
+  }
+  .supporter_name {
+    font-size: 1.8rem;
+  }
 }
 </style>

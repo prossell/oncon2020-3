@@ -31,6 +31,12 @@ export default {
           logo: 'kosen_career',
           jaName: '株式会社 高専キャリア教育研究所',
           enName: 'Kosen Career Co., Ltd.'
+        },
+        {
+          link: 'https://academic-gangstar.com/',
+          logo: 'academic_gangstar',
+          jaName: '株式会社 アカデミックギャングスター',
+          enName: 'Academic Gangstar Co., Ltd.'
         }
       ]
     }

@@ -21,8 +21,9 @@
             span.information_list_content--sponsor
               span {{ $t('information.content.powered_by') }}
               nuxt-link(to="/about") Prossell
-            span.information_list_content--coorporate 協力：
-              a(href = "https://n-wakamonokikou.net/") ながおか・若者・しごと機構
+            span.information_list_content--coorporate
+              span {{ $t('information.content.coorporate') }}
+              a(href = "https://n-wakamonokikou.net/") {{ $t('information.content.coorporater') }}
 
 </template>
 <script>

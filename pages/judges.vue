@@ -174,6 +174,7 @@ export default {
     box-shadow: 0 4px 16px rgba($black, 0.1);
   }
   &_picture {
+    flex-shrink: 0;
     width: 320px;
     height: 320px;
   }

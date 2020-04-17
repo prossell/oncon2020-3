@@ -50,8 +50,7 @@ export default {
           logo: 'excite',
           janame: 'エキサイト株式会社',
           enname: 'Excite Japan Co., Ltd.'
-        },
-        {}
+        }
       ],
       sponsors_B: [{}],
       sponsors_C: [{}]

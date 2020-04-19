@@ -8,17 +8,23 @@
             img.sup_logo(v-if="sup.logo" :src="require(`~/assets/sponsor_imgs/${sup.logo}.png`)")
             .supporter_name(v-if="$i18n.locale === 'ja'") {{sup.jaName}}
             .supporter_name(v-else) {{sup.enName}}
+    .container(v-else)
+      nuxt-link(to="/")
+        CommingSoonSvg.comming_soon
+      p.prease_weit {{ $t('sponsors.wait') }}
 </template>
 <script>
 import SectionTitle from '~/components/atoms/SectionTitle.vue'
+import CommingSoonSvg from '~/assets/images/comming_soon.svg?inline'
 
 export default {
   components: {
-    SectionTitle
+    SectionTitle,
+    CommingSoonSvg
   },
   data() {
     return {
-      publish: true,
+      publish: false,
       supporters: [
         {
           link: 'https://dena.com/jp/',

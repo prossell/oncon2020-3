@@ -42,63 +42,63 @@ export default {
       news_list: [
         {
           pub: true,
-          date: '2020/04/08',
+          date: '2020/04/24',
           title_ja: 'オンコン公式Webサイトを公開しました。',
           title_en: 'ONCON Official Website Was Launched.'
-        },
-        {
-          pub: true,
-          date: '2020/04/08',
-          title_ja: '高専マガジンに掲載されました！',
-          title_en: 'Report Published in Kosen Magazine',
-          detaile_ja: '前回の参加レポートをまとめております。',
-          detaile_en: 'Report from a previous participant (Japanese Only)',
-          link: 'https://kosen-magazine.com/online-intern-contest-2020-report/'
-        },
-        {
-          pub: true,
-          date: '2020/04/15',
-          title_ja: 'サポーター企業の公開',
-          title_en: 'Introduction of Suportors',
-          detaile_ja: '(株)DeNA様',
-          detaile_en: 'DeNA Co., Ltd.'
-        },
-        {
-          pub: true,
-          date: '2020/04/16',
-          title_ja: 'スポンサー企業の公開',
-          title_en: 'Introduction of Sponsor',
-          detaile_ja: 'エキサイト(株)様',
-          detaile_en: 'Excite Japan Co., Ltd.'
-        },
-        {
-          pub: true,
-          date: '2020/04/16',
-          title_ja: 'サポーター企業の追加',
-          title_en: 'New Suportors',
-          detaile_ja:
-            '(株)高専キャリア教育研究所様、(株)アカデミックギャングスター様',
-          detaile_en: 'Kosen Career Co., Ltd., Academic Gangstar Co., Ltd.'
-        },
-        {
-          pub: true,
-          date: '2020/04/16',
-          title_ja: '審査員(Judges)ページの公開',
-          title_en: 'Add Judges page',
-          detaile_ja: '審査員およびメンターの方々の紹介をしております。',
-          detaile_en: 'Introduction of the judges and mentors (Japanese Only)',
-          link: '/judges'
-        },
-        {
-          pub: true,
-          date: '2020/04/17',
-          title_ja: '🌸🌸🌸 オンコンがスタートしました！🌸🌸🌸',
-          title_en: '🌸🌸🌸 The contest has started！🌸🌸🌸',
-          detaile_ja:
-            '学生の応募を締め切りました。応募者数は前回の倍近くとなる107名！これから1週間頑張りましょう！',
-          detaile_en:
-            "The number of applicants was 107, nearly double the previous contest! Let's work hard for the week ahead!"
         }
+        // {
+        //   pub: true,
+        //   date: '2020/04/08',
+        //   title_ja: '高専マガジンに掲載されました！',
+        //   title_en: 'Report Published in Kosen Magazine',
+        //   detaile_ja: '前回の参加レポートをまとめております。',
+        //   detaile_en: 'Report from a previous participant (Japanese Only)',
+        //   link: 'https://kosen-magazine.com/online-intern-contest-2020-report/'
+        // },
+        // {
+        //   pub: true,
+        //   date: '2020/04/15',
+        //   title_ja: 'サポーター企業の公開',
+        //   title_en: 'Introduction of Suportors',
+        //   detaile_ja: '(株)DeNA様',
+        //   detaile_en: 'DeNA Co., Ltd.'
+        // },
+        // {
+        //   pub: true,
+        //   date: '2020/04/16',
+        //   title_ja: 'スポンサー企業の公開',
+        //   title_en: 'Introduction of Sponsor',
+        //   detaile_ja: 'エキサイト(株)様',
+        //   detaile_en: 'Excite Japan Co., Ltd.'
+        // },
+        // {
+        //   pub: true,
+        //   date: '2020/04/16',
+        //   title_ja: 'サポーター企業の追加',
+        //   title_en: 'New Suportors',
+        //   detaile_ja:
+        //     '(株)高専キャリア教育研究所様、(株)アカデミックギャングスター様',
+        //   detaile_en: 'Kosen Career Co., Ltd., Academic Gangstar Co., Ltd.'
+        // },
+        // {
+        //   pub: true,
+        //   date: '2020/04/16',
+        //   title_ja: '審査員(Judges)ページの公開',
+        //   title_en: 'Add Judges page',
+        //   detaile_ja: '審査員およびメンターの方々の紹介をしております。',
+        //   detaile_en: 'Introduction of the judges and mentors (Japanese Only)',
+        //   link: '/judges'
+        // },
+        // {
+        //   pub: true,
+        //   date: '2020/04/17',
+        //   title_ja: '🌸🌸🌸 オンコンがスタートしました！🌸🌸🌸',
+        //   title_en: '🌸🌸🌸 The contest has started！🌸🌸🌸',
+        //   detaile_ja:
+        //     '学生の応募を締め切りました。応募者数は前回の倍近くとなる107名！これから1週間頑張りましょう！',
+        //   detaile_en:
+        //     "The number of applicants was 107, nearly double the previous contest! Let's work hard for the week ahead!"
+        // }
       ]
     }
   },

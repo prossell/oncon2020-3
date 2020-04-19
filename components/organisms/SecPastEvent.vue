@@ -21,6 +21,11 @@ export default {
           link: 'https://oncon2020.prossell.jp/',
           data: '1/14〜3/3',
           title: 'ONLINE INTERN CONTEST 2020'
+        },
+        {
+          link: 'https://oncon2020-2.prossell.jp/',
+          data: '4/17〜4/24',
+          title: 'ONLINE INTERN CONTEST 2020 #2'
         }
       ]
     }

@@ -9,7 +9,7 @@
           SankaOubo
           .application_period
             .application_period_text {{ $t('index.application_period') }}
-            .application_period_date 4/8 ~ 4/16
+            .application_period_date 4/24 ~ 4/30
       .scroll_down(v-if="$mq !== 'sm'")
         ScrollSvg.scroll_down_svg
         .scroll_line

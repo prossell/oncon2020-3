@@ -90,6 +90,24 @@ export default {
   // }
 }
 
+.container {
+  text-align: center;
+}
+.comming_soon {
+  width: 260px;
+  transition: 0.3s $ease-out-1;
+  .comming_soon_cls-2 {
+    fill: $gray;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.prease_weit {
+  margin-top: 8px;
+  color: $gray-txt;
+}
+
 @media screen and (max-width: $md) {
   .supporter_box {
     padding: 4px;

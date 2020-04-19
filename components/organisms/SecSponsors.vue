@@ -43,7 +43,7 @@ export default {
   },
   data() {
     return {
-      publish: true,
+      publish: false,
       sponsors_A: [
         {
           link: 'https://www.excite.co.jp/',

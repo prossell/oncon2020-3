@@ -5,11 +5,11 @@
     .container
       .main_wrapper
         .application_period
-          .application_period_date 4/8 ~ 4/16
+          .application_period_date 4/24 ~ 4/30
           .application_period_text {{ $t('schedule.application') }}
         .application_large
           Slant1Svg.slant.slant_1
-          .application_large_date 4/17<sup>※1</sup>
+          .application_large_date 5/1<sup>※1</sup>
           .application_large_text Kickoff
           .application_large_time ※1 10:00 ~ 11:00 (UTC+9)
           .explanation
@@ -24,7 +24,7 @@
             .contest_period_text {{sch.content}}
         .application_large.application_large--final
           Slant2Svg.slant.slant_2
-          .application_large_date 4/24<sup>※2</sup>
+          .application_large_date 5/8<sup>※2</sup>
           .application_large_text Final pitch
           .application_large_time ※2 17:00 ~ 19:00 (UTC+9)
           .explanation.explanation--final

@@ -26,7 +26,7 @@
           Slant2Svg.slant.slant_2
           .application_large_date 5/8<sup>※2</sup>
           .application_large_text Final pitch
-          .application_large_time ※2 17:00 ~ 19:00 (UTC+9)
+          .application_large_time ※2 17:00 ~ 20:00 (UTC+9)
           .explanation.explanation--final
             .explanation_text {{ $t('schedule.final') }}
 

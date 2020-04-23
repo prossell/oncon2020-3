@@ -1,7 +1,7 @@
 <template lang="pug">
   .sankaoubo_box
     nuxt-link(to="/disclaimer").application_btn
-      CommingSoonSvg.sankaoubo(v-if="this.$i18n.locale === 'ja'")
+      SankaouboSvg.sankaoubo(v-if="this.$i18n.locale === 'ja'")
       .sankaoubo(v-if="this.$i18n.locale === 'en'")
         .enfont Closed
 

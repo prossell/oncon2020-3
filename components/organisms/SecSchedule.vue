@@ -11,7 +11,7 @@
           Slant1Svg.slant.slant_1
           .application_large_date 5/1<sup>※1</sup>
           .application_large_text Kickoff
-          .application_large_time ※1 10:00 ~ 11:00 (UTC+9)
+          .application_large_time ※1 17:00 ~ 18:00 (UTC+9)
           .explanation
             .explanation_text {{ $t('schedule.kickoff') }}
         .contest_periods(v-if="$mq !== 'sm'")

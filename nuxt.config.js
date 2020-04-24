@@ -44,7 +44,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://oncon2020-2.prossell.jp/img/OGP.png'
+        content: 'https://oncon2020-3.prossell.jp/img/OGP.png'
       },
       { property: 'fb:app_id', content: '218399332764411' },
       { name: 'twitter:card', content: 'summary' },

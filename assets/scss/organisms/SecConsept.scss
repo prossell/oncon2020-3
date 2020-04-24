@@ -32,38 +32,10 @@ $final_pitch_width: 26%;
       &__txt {
         font-size: 2.6vw;
         font-weight: $weight-thin;
-        // margin: auto;
-        // width: 100%;
-      }
-    }
-    &__title {
-      @include flex();
-      margin-top: 40px;
-      text-align: center;
-
-      &__txt {
-        flex-grow: 0;
-        flex-shrink: 0;
-        font-weight: $weight-thin;
-        font-size: 2.65vw;
-        // width: 100%;
-      }
-      &__entxt {
-        flex-grow: 0;
-        flex-shrink: 0;
-        font-weight: $weight-thin;
-        font-size: 2.8vw;
-        // width: 100%;
-      }
-      &__times {
-        display: block;
-        width: 5.5vw;
       }
     }
 
     &__discription {
-      // width: 80%;
-      // margin: auto;
       margin-top: 40px;
       font-size: 1.7rem;
 
@@ -82,56 +54,52 @@ $final_pitch_width: 26%;
       padding-left: $pitch_margin_left;
     }
   }
+}
 
-  .consept {
-    width: 100% - $final_pitch_width;
-    padding-left: 12%;
+.consept {
+  width: 100% - $final_pitch_width;
+  padding-left: 12%;
 
-    &__box {
-      width: 24%;
-      height: 16px;
-      background: $theme-gradient;
-      margin-left: auto;
+  &__box {
+    width: 24%;
+    height: 16px;
+    background: $theme-gradient;
+    margin-left: auto;
+  }
+  &__title {
+    @include flex();
+    margin-top: 40px;
+
+    &__txt {
+      flex-grow: 0;
+      flex-shrink: 0;
+      font-weight: $weight-thin;
+      font-size: 2.65vw;
     }
-    &__title {
-      @include flex();
-      margin-top: 40px;
-      text-align: center;
-
-      &__txt {
-        flex-grow: 0;
-        flex-shrink: 0;
-        font-weight: $weight-thin;
-        font-size: 2.65vw;
-        // width: 100%;
-      }
-      &__entxt {
-        flex-grow: 0;
-        flex-shrink: 0;
-        font-weight: $weight-thin;
-        font-size: 2.8vw;
-        // width: 100%;
-      }
-      &__times {
-        display: block;
-        width: 5.5vw;
-      }
+    &__entxt {
+      flex-grow: 0;
+      flex-shrink: 0;
+      font-weight: $weight-thin;
+      font-size: 2.8vw;
     }
+    &__times {
+      display: block;
+      width: 5.5vw;
+    }
+  }
 
-    &__discription {
-      width: 100%;
-      margin: auto;
-      margin-top: 40px;
-      font-size: 1.8rem;
-      p {
-        margin: 0.6rem 0;
-        br {
-          display: none;
-        }
+  &__discription {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    p {
+      margin: 0.6rem 0;
+      br {
+        display: none;
       }
     }
   }
 }
+
 
 @media screen and (max-width: $sm) {
   .SecConsept {
@@ -140,18 +108,14 @@ $final_pitch_width: 26%;
   .consept {
     width: 100%;
     padding-left: 0;
-
     &__title {
       display: block;
       margin-top: 28px;
-
       &__txt {
         position: relative;
         font-size: 2.8rem;
-        // width: 100%;
         padding-bottom: 0px;
         text-align: center;
-
         &::before {
           content: '';
           @include absolute($bottom: 0, $left: 0);

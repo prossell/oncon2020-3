@@ -7,10 +7,16 @@
           .final_pitch__box
         .consept
           .consept__box(v-if="$mq !== 'sm'")
-          .consept__title
-            .consept__title__txt {{ $t('concept.title_1') }} <br/> {{ $t('concept.title_2') }}
-            //- TimesSvg.consept__title__times
-            //-  .consept__title__txt インターンシップ
+          .consept__title(v-if="$i18n.locale === 'ja'") 
+            .consept__title__txt {{ $t('concept.title_1') }}
+            TimesSvg.consept__title__times
+            .consept__title__txt {{ $t('concept.title_2') }}
+
+          .consept__title(v-else) 
+            .consept__title__entxt {{ $t('concept.title_1') }}
+            TimesSvg.consept__title__times
+            .consept__title__entxt {{ $t('concept.title_2') }}
+
           .consept__discription
             p
               span {{ $t('concept.discription_1') }} <br/>

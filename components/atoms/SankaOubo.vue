@@ -3,7 +3,9 @@
     nuxt-link(to="/disclaimer").application_btn
       SankaouboSvg.sankaoubo(v-if="this.$i18n.locale === 'ja'")
       .sankaoubo(v-if="this.$i18n.locale === 'en'")
-        .enfont Closed
+        .enfont Apply!
+
+        //- .enfont Closed
 
 </template>
 <script>

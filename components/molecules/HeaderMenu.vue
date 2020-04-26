@@ -14,8 +14,8 @@
         .header_menu_links(v-else)
           .header_menu_link(v-for="(link,link_id) in links" :key="`header_menu_link_${link_id}`")
             nuxt-link(:to="link.to").header_menu_link_title {{link.name}}
-        .header_menu_locale
-          ToggleLocale
+        //- .header_menu_locale
+        //-   ToggleLocale
         .header_menu_sns
           TopShareSNS
 </template>
@@ -37,7 +37,7 @@ export default {
       menu: false,
       links: [
         { to: './about', name: 'About' },
-        // { to: './judges', name: 'Judges' },
+        { to: './judges', name: 'Judges' },
         { to: './news', name: 'News' }
         // { to: '/corporates', name: '企業の方へ' }
       ]

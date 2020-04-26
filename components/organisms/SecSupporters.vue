@@ -6,8 +6,8 @@
         .supporter_box(v-for="(sup, sup_key) in supporters" :key="`sup_key${sup_key}`")
           a(:href="sup.link")
             img.sup_logo(v-if="sup.logo" :src="require(`~/assets/sponsor_imgs/${sup.logo}.png`)")
-            .supporter_name(v-if="$i18n.locale === 'ja'") {{sup.jaName}}
-            .supporter_name(v-else) {{sup.enName}}
+            .supporter_name {{sup.jaName}}
+
     .container(v-else)
       nuxt-link(to="/")
         CommingSoonSvg.comming_soon
@@ -24,26 +24,20 @@ export default {
   },
   data() {
     return {
-      publish: false,
+      publish: true,
       supporters: [
-        {
-          link: 'https://dena.com/jp/',
-          logo: 'dena',
-          jaName: '株式会社ディー・エヌ・エー',
-          enName: 'DeNA Co., Ltd.'
-        },
         {
           link: 'https://kosen-career.tech/',
           logo: 'kosen_career',
           jaName: '株式会社 高専キャリア教育研究所',
           enName: 'Kosen Career Co., Ltd.'
-        },
-        {
-          link: 'https://academic-gangstar.com/',
-          logo: 'academic_gangstar',
-          jaName: '株式会社 アカデミックギャングスター',
-          enName: 'Academic Gangstar Co., Ltd.'
         }
+        // {
+        //   link: 'https://academic-gangstar.com/',
+        //   logo: 'academic_gangstar',
+        //   jaName: '株式会社 アカデミックギャングスター',
+        //   enName: 'Academic Gangstar Co., Ltd.'
+        // }
       ]
     }
   }

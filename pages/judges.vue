@@ -4,22 +4,22 @@
     SubPageTopTitle(:title="'Judges & Mentors'")
     .container
       .judges_message {{message}}
-    SectionTitle(:title="'Judges'")
-    .container
-      .judges_wrapper(v-for="(jud,jud_key) in judges" :key="`jud_${jud_key}`")
-        .judge
-          img.judge_picture(v-if="jud.img" :src="require(`~/assets/images/${jud.img}.png`)")
-          .judge_content
-            .judge_content--name {{jud.name}}
-            .judge_content--affiliate
-              .office(v-for="(affi,affi_key) in jud.affiliate" :key="`about_${affi_key}`")
-                p {{affi}}
-            .judge_content--about(v-for="(about,about_key) in jud.about" :key="`about_${about_key}`")
-              p {{about}}
+    //- SectionTitle(:title="'Judges'")
+    //- .container
+    //-   .judges_wrapper(v-for="(jud,jud_key) in judges" :key="`jud_${jud_key}`")
+    //-     .judge
+    //-       img.judge_picture(v-if="jud.img" :src="require(`~/assets/images/${jud.img}.png`)")
+    //-       .judge_content
+    //-         .judge_content--name {{jud.name}}
+    //-         .judge_content--affiliate
+    //-           .office(v-for="(affi,affi_key) in jud.affiliate" :key="`about_${affi_key}`")
+    //-             p {{affi}}
+    //-         .judge_content--about(v-for="(about,about_key) in jud.about" :key="`about_${about_key}`")
+    //-           p {{about}}
     SectionTitle(:title="'Mentors'")
     .container
       .judges_wrapper(v-for="(men,men_key) in mentors" :key="`men_${men_key}`")
-        .judge
+        a(:href="men.link").judge
           img.judge_picture(v-if="men.img" :src="require(`~/assets/images/${men.img}.png`)")
           .judge_content
             .judge_content--name {{men.name}}
@@ -59,43 +59,30 @@ export default {
       publish: true,
       message: 'オンコン（略称）の審査員およびメンターの方々をご紹介します！',
       judges: [
-        {
-          name: '西村 真陽',
-          affiliate: ['株式会社ディー・エヌ・エー'],
-          img: 'nishimura_masaya',
-          about: [
-            '同志社大学卒。学生時代はRed Bull Japanでのブランドマーケティングを経験したのち、2016年にDeNA新卒入社。',
-            '入社後はDeNAライフサイエンスにて『歩いておトク』の企画・運営、レベルデザインの最適化や渉外業務を担当。',
-            '兼務制度を利用して、健康経営を専門とした部署｢CHO室｣の立ち上げ、社内喫煙室の紙タバコ廃止、オリジナルサラダの企画、マインドフルネスのセミナー講師の他、腰痛撲滅PJを責任者として推進。',
-            '2018年より、｢笑い×健康｣をテーマとした新規事業の検討チームリーダーを務める。',
-            '2019年に事業検討終了後、現在は子宮頸がん検診啓発「Blue Star Project」のプロジェクト責任者に従事。',
-            '子宮頸がん検診の普及に向けたマーケティングやブランディングを行っている。'
-          ]
-        },
-        {
-          name: '進藤 圭',
-          affiliate: [
-            'ディップ株式会社 執行役員',
-            '次世代事業準備室/dip AI.Lab室長'
-          ],
-          img: 'shinto_kei',
-          about: [
-            '早稲田大学を7年かけ卒業後、ディップに新卒入社。',
-            '営業職、ディレクター職を経て、開始後3年で15億円の売上に成長した看護師人材紹介「ナースではたらこ」事業化をはじめとし、40件以上のサービス企画に参加。直近では「FAST RPA コボット」を提供するAI/RPA事業がある。',
-            '現在は新規事業責任者、「聖地巡礼マップ」、人工知能ニュース「AINOW」、スタートアップニュース「StartUpTimes」チームを担当。アクセラレーターでは「AI.Accelarator」「HR-HackFund」「Gakucelerator」を運営、Google for Startups Accelerator mentor、「ASAC」青山スタートアップアクセラメンター、「OIH」大阪イノベーションハブメンター「kansAI0.6」関西AIアクセラレーターメンター。',
-            'また投資担当として年間15社程度の投資を担当。投資先はhachidori、GAUSS、JOLLYGOOD、Marketing-Robotics、Apparray、キャスター、コグニティ、Amplified.ai、Tsunagu.ai、Foxsy、Oceans、Tutorial、Lightblue Technology、ウリドキネット、Trunk、MILIZE、ポリグロッツなど。文科系な活動ではTBSラジオ「好奇心家族」ニュース解説者、「いちばんやさしいRPAの教本」を出版。'
-          ]
-        },
-        {
-          name: '齊藤 義明',
-          affiliate: ['野村総合研究所 2030年研究室 室長'],
-          img: 'saito_yoshiaki',
-          about: [
-            '北海道大学卒。1988年野村総合研究所入社、ワシントン支店長、コンサルティング本部戦略企画部長などを歴任、現在はイノベーション・プログラムの開発者として全国を飛び回る。',
-            '100人以上の革新者と親密なネットワークを持つ。',
-            '近著に「日本の革新者たち」（ＢＮＮ新社）がある。'
-          ]
-        }
+        // {
+        //   name: '進藤 圭',
+        //   affiliate: [
+        //     'ディップ株式会社 執行役員',
+        //     '次世代事業準備室/dip AI.Lab室長'
+        //   ],
+        //   img: 'shinto_kei',
+        //   about: [
+        //     '早稲田大学を7年かけ卒業後、ディップに新卒入社。',
+        //     '営業職、ディレクター職を経て、開始後3年で15億円の売上に成長した看護師人材紹介「ナースではたらこ」事業化をはじめとし、40件以上のサービス企画に参加。直近では「FAST RPA コボット」を提供するAI/RPA事業がある。',
+        //     '現在は新規事業責任者、「聖地巡礼マップ」、人工知能ニュース「AINOW」、スタートアップニュース「StartUpTimes」チームを担当。アクセラレーターでは「AI.Accelarator」「HR-HackFund」「Gakucelerator」を運営、Google for Startups Accelerator mentor、「ASAC」青山スタートアップアクセラメンター、「OIH」大阪イノベーションハブメンター「kansAI0.6」関西AIアクセラレーターメンター。',
+        //     'また投資担当として年間15社程度の投資を担当。投資先はhachidori、GAUSS、JOLLYGOOD、Marketing-Robotics、Apparray、キャスター、コグニティ、Amplified.ai、Tsunagu.ai、Foxsy、Oceans、Tutorial、Lightblue Technology、ウリドキネット、Trunk、MILIZE、ポリグロッツなど。文科系な活動ではTBSラジオ「好奇心家族」ニュース解説者、「いちばんやさしいRPAの教本」を出版。'
+        //   ]
+        // },
+        // {
+        //   name: '齊藤 義明',
+        //   affiliate: ['野村総合研究所 2030年研究室 室長'],
+        //   img: 'saito_yoshiaki',
+        //   about: [
+        //     '北海道大学卒。1988年野村総合研究所入社、ワシントン支店長、コンサルティング本部戦略企画部長などを歴任、現在はイノベーション・プログラムの開発者として全国を飛び回る。',
+        //     '100人以上の革新者と親密なネットワークを持つ。',
+        //     '近著に「日本の革新者たち」（ＢＮＮ新社）がある。'
+        //   ]
+        // }
       ],
       mentors: [
         {
@@ -108,7 +95,8 @@ export default {
             '2015年よりライフワークとして東京高専でのキャリア教育セミナーや高専特化型クラウドファンディングなどを運営。2017年に高専キャリア教育研究所を設立。',
             '2019年にみらい創造機構と資本業務提携を締結し、エンジニア向けキャリア開発プラットフォームの構築を推進している。',
             '情報経営イノベーション専門職大学客員教授。高専DCON実行委員会。東京高専同窓会役員。'
-          ]
+          ],
+          link: 'https://twitter.com/RyuhiKanno'
         },
         {
           name: '兼城 駿一郎',
@@ -119,26 +107,27 @@ export default {
             'リクルートホールディングスに新卒入社後、開発組織の立ち上げ・新規事業開発・スタートアップの買収を経験。',
             'リクルート在籍中にSNS分析のスタートアップmisosilを創業し、代表取締役に就任。VCや金融機関からの資金調達や黒字化を実現し役員を退任。',
             '現在は高専キャリア教育研究所のCTOを務めつつ、Jidoca Technologiesの代表取締役としてスタートアップの技術顧問や事業開発・アプリケーション開発の支援を行っている。'
-          ]
-        },
-        {
-          name: '中川 卓也',
-          affiliate: ['株式会社 アカデミックギャングスター', '代表取締役'],
-          img: 'nakagawa_takuya',
-          about: [
-            '1983年京都大学卒業。',
-            '事業会社を経て、外資系投資銀行に勤務。',
-            '・キダー・ピーボディ証券（GEキャピタル）外国株式部',
-            '・バークレイズ証券 キャピタルマーケット部 ダイレクター',
-            '・HSBC証券 資本市場部門 マネージング・ダイレクター',
-            '・みずほ証券 グローバル投資銀行部門 事業開発総括部長',
-            '・ネスレ日本株式会社 総務人事本部 人材・組織開発部長',
-            '・プルータス・コンサルティング エグゼクティブ・ダイレクター',
-            '等を歴任。',
-            'グローバルマーケッツ、Ｍ＆Ａ、デット/エクイティファイナンス、デリバティブ金融複合商品、ストラクチャードファイナンス・セキュリタイゼーション、ＰＥ・ヘッジファンドの資金調達、ＩＲ・コーポレートガバナンスアドバイス、組織・人材開発プログラム企画実施、などに従事。',
-            '事業会社、機関投資家の事業戦略、資本・財務政策、資金調達、議決権行使基準、人事人材政策へのアドバイスにより顧客の企業価値向上に携わる。中央官庁、自治体、アカデミア、取引所、などと連携しながら各種制度改正や地方経済活性化にも携わる。'
-          ]
+          ],
+          link: 'https://twitter.com/pinkroot'
         }
+        // {
+        //   name: '中川 卓也',
+        //   affiliate: ['株式会社 アカデミックギャングスター', '代表取締役'],
+        //   img: 'nakagawa_takuya',
+        //   about: [
+        //     '1983年京都大学卒業。',
+        //     '事業会社を経て、外資系投資銀行に勤務。',
+        //     '・キダー・ピーボディ証券（GEキャピタル）外国株式部',
+        //     '・バークレイズ証券 キャピタルマーケット部 ダイレクター',
+        //     '・HSBC証券 資本市場部門 マネージング・ダイレクター',
+        //     '・みずほ証券 グローバル投資銀行部門 事業開発総括部長',
+        //     '・ネスレ日本株式会社 総務人事本部 人材・組織開発部長',
+        //     '・プルータス・コンサルティング エグゼクティブ・ダイレクター',
+        //     '等を歴任。',
+        //     'グローバルマーケッツ、Ｍ＆Ａ、デット/エクイティファイナンス、デリバティブ金融複合商品、ストラクチャードファイナンス・セキュリタイゼーション、ＰＥ・ヘッジファンドの資金調達、ＩＲ・コーポレートガバナンスアドバイス、組織・人材開発プログラム企画実施、などに従事。',
+        //     '事業会社、機関投資家の事業戦略、資本・財務政策、資金調達、議決権行使基準、人事人材政策へのアドバイスにより顧客の企業価値向上に携わる。中央官庁、自治体、アカデミア、取引所、などと連携しながら各種制度改正や地方経済活性化にも携わる。'
+        //   ]
+        // }
       ]
     }
   }
@@ -164,6 +153,7 @@ export default {
   transition: 0.3s $ease-out-1;
   transform: translateY(0);
   padding: 32px;
+  text-decoration: none;
   &::before {
     content: '';
     display: block;
@@ -181,6 +171,7 @@ export default {
   &_content {
     margin: 0 0 0 40px;
     text-align: left;
+    color: $black;
     &--name {
       font-family: $noto-sans;
       font-size: 2.4rem;
@@ -238,6 +229,7 @@ export default {
     &_content {
       text-align: center;
       margin: 0 40px;
+
       &--about {
         text-align: left;
       }

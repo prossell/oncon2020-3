@@ -9,7 +9,7 @@ export default ({ app }) => {
     locale,
     fallbackLocale: 'ja',
     messages: {
-      en: require('~/locales/en.json'),
+      // en: require('~/locales/en.json'),
       ja: require('~/locales/ja.json')
     }
   })

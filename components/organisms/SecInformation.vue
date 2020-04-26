@@ -14,8 +14,8 @@
             p.information_list_content--caution ※3 {{ $t('information.content.caution') }}
         .information_list.judge
           p.information_list_theme {{ $t('information.theme.who_evaluate')}}
-          //- nuxt-link(to="/judges").information_list_content {{ $t('information.content.who_evaluate') }}
-          p.information_list_content {{ $t('information.content.who_evaluate') }}
+          nuxt-link(to="/judges").information_list_content {{ $t('information.content.who_evaluate') }}
+          //- p.information_list_content {{ $t('information.content.who_evaluate') }}
         .information_list.management
           p.information_list_theme {{ $t('information.theme.powered_by') }}
           p.information_list_content

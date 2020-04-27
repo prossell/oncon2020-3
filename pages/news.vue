@@ -67,6 +67,12 @@ export default {
           title_ja: '審査員(Judges)ページの公開',
           detaile_ja: '審査員およびメンターの方々の紹介をしております。',
           link: '/judges'
+        },
+        {
+          pub: true,
+          date: '2020/04/27',
+          title_ja: 'サポーター企業の追加',
+          detaile_ja: '(株)アカデミックギャングスター様'
         }
         // {
         //   pub: true,

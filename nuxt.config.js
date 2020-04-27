@@ -47,7 +47,7 @@ export default {
         content: 'https://oncon2020-3.prossell.jp/img/OGP.png'
       },
       { property: 'fb:app_id', content: '218399332764411' },
-      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:card', content: 'ummary_large_image' },
       { name: 'twitter:site', content: '@Prossell_JP' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]

@@ -84,7 +84,7 @@ export default {
           pub: true,
           date: '2020/04/28',
           title_ja: '審査員の追加',
-          detaile_ja: '西村真陽 様'
+          detaile_ja: '西村真陽 様，山根弘成 様'
         }
         // {
         //   pub: true,
@@ -115,7 +115,7 @@ export default {
   head() {
     return {
       title: 'News',
-      titleTemplate: '%s - ONLINE INTERN CONTEST 2020 #2'
+      titleTemplate: '%s - ONLINE INTERN CONTEST 2020 #3'
     }
   }
 }

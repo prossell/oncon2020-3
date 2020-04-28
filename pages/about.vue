@@ -10,13 +10,13 @@
         .members_list
           .member_wrapper(v-for="(mem,mem_key) in  $t('about.members') " :key="`men_${mem_key}`")
             a.member_link(v-if="mem.link" :href="mem.link")
-              .member_role {{mem.role}} 
+              .member_role {{mem.role}}
               img.member_icon(v-if="mem.icon" :src="require(`~/assets/member_imgs/${mem.icon}.png`)")
-              .member_name {{mem.name}} 
+              .member_name {{mem.name}}
             .member_no_link(v-else)
               .member_role(v-if="mem.role") {{mem.role}}
               img.member_icon(v-if="mem.icon" :src="require(`~/assets/member_imgs/${mem.icon}.png`)")
-              .member_name {{mem.name}} 
+              .member_name {{mem.name}}
     //- PosterDownload
     Footer
 </template>
@@ -40,7 +40,7 @@ export default {
   head() {
     return {
       title: 'About',
-      titleTemplate: '%s - ONLINE INTERN CONTEST 2020 #2'
+      titleTemplate: '%s - ONLINE INTERN CONTEST 2020 #3'
     }
   }
 }

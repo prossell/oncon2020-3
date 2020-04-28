@@ -4,18 +4,18 @@
     SubPageTopTitle(:title="'Judges & Mentors'")
     .container
       .judges_message {{message}}
-    //- SectionTitle(:title="'Judges'")
-    //- .container
-    //-   .judges_wrapper(v-for="(jud,jud_key) in judges" :key="`jud_${jud_key}`")
-    //-     .judge
-    //-       img.judge_picture(v-if="jud.img" :src="require(`~/assets/images/${jud.img}.png`)")
-    //-       .judge_content
-    //-         .judge_content--name {{jud.name}}
-    //-         .judge_content--affiliate
-    //-           .office(v-for="(affi,affi_key) in jud.affiliate" :key="`about_${affi_key}`")
-    //-             p {{affi}}
-    //-         .judge_content--about(v-for="(about,about_key) in jud.about" :key="`about_${about_key}`")
-    //-           p {{about}}
+    SectionTitle(:title="'Judges'")
+    .container
+      .judges_wrapper(v-for="(jud,jud_key) in judges" :key="`jud_${jud_key}`")
+        a(:href="jud.link").judge
+          img.judge_picture(v-if="jud.img" :src="require(`~/assets/images/${jud.img}.png`)")
+          .judge_content
+            .judge_content--name {{jud.name}}
+            .judge_content--affiliate
+              .office(v-for="(affi,affi_key) in jud.affiliate" :key="`about_${affi_key}`")
+                p {{affi}}
+            .judge_content--about(v-for="(about,about_key) in jud.about" :key="`about_${about_key}`")
+              p {{about}}
     SectionTitle(:title="'Mentors'")
     .container
       .judges_wrapper(v-for="(men,men_key) in mentors" :key="`men_${men_key}`")
@@ -59,6 +59,20 @@ export default {
       publish: true,
       message: 'オンコン（略称）の審査員およびメンターの方々をご紹介します！',
       judges: [
+        {
+          name: '西村 真陽',
+          // affiliate: ['株式会社ディー・エヌ・エー'],
+          img: 'nishimura_masaya',
+          about: [
+            '同志社大学卒。学生時代はRed Bull Japanでのブランドマーケティングを経験したのち、2016年にDeNA新卒入社。',
+            '入社後はDeNAライフサイエンスにて『歩いておトク』の企画・運営、レベルデザインの最適化や渉外業務を担当。',
+            '兼務制度を利用して、健康経営を専門とした部署｢CHO室｣の立ち上げ、社内喫煙室の紙タバコ廃止、オリジナルサラダの企画、マインドフルネスのセミナー講師の他、腰痛撲滅PJを責任者として推進。',
+            '2018年より、｢笑い×健康｣をテーマとした新規事業の検討チームリーダーを務める。',
+            '2019年に事業検討終了後、現在は子宮頸がん検診啓発「Blue Star Project」のプロジェクト責任者に従事。',
+            '子宮頸がん検診の普及に向けたマーケティングやブランディングを行っている。'
+          ],
+          link: 'https://twitter.com/masayaquality'
+        }
         // {
         //   name: '進藤 圭',
         //   affiliate: [

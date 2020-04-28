@@ -59,7 +59,7 @@ export default {
           pub: true,
           date: '2020/04/26',
           title_ja: 'サポーター企業の公開',
-          detaile_ja: '(株)高専キャリア教育研究所様'
+          detaile_ja: '(株)高専キャリア教育研究所 様'
         },
         {
           pub: true,
@@ -72,7 +72,19 @@ export default {
           pub: true,
           date: '2020/04/27',
           title_ja: 'サポーター企業の追加',
-          detaile_ja: '(株)アカデミックギャングスター様'
+          detaile_ja: '(株)アカデミックギャングスター 様'
+        },
+        {
+          pub: true,
+          date: '2020/04/27',
+          title_ja: '審査員(メンター)の追加',
+          detaile_ja: '中川卓也 様'
+        },
+        {
+          pub: true,
+          date: '2020/04/28',
+          title_ja: '審査員の追加',
+          detaile_ja: '西村真陽 様'
         }
         // {
         //   pub: true,

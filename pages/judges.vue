@@ -111,7 +111,7 @@ export default {
             '100人以上の革新者と親密なネットワークを持つ。',
             '近著に「日本の革新者たち」（ＢＮＮ新社）がある。'
           ],
-          link: 'https://twitter.com/RyuhiKanno'
+          link: 'https://www.nri.com/jp/service/souhatsu'
         }
       ],
       mentors: [

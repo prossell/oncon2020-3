@@ -85,6 +85,12 @@ export default {
           date: '2020/04/28',
           title_ja: '審査員の追加',
           detaile_ja: '西村真陽 様，山根弘成 様'
+        },
+        {
+          pub: true,
+          date: '2020/04/30',
+          title_ja: '審査員の追加',
+          detaile_ja: '齊藤義明 様'
         }
         // {
         //   pub: true,

@@ -4,7 +4,7 @@
     SubPageTopTitle(:title="'Rules'")
     .container
       .main_wrapper
-        //- BoshushuryoSvg.boshushuryo(v-if="this.$i18n.locale === 'ja'")
+        BoshushuryoSvg.boshushuryo
         //- .boshushuryo(v-if="this.$i18n.locale === 'en'")
         //-   .enfont Application have been closed
         .disclaimer_box
@@ -55,8 +55,8 @@ export default {
   },
   methods: {
     toggleAgreement() {
-      // this.$scrollTo('#top')
-      this.agree = this.agree !== true
+      this.$scrollTo('#top')
+      // this.agree = this.agree !== true
     },
     goToForm() {
       window.location.href =
@@ -129,7 +129,7 @@ export default {
   }
 }
 .disclaimer_checkbox {
-  // opacity: 0.3;
+  opacity: 0.3;
 
   margin: 64px auto;
   @include flex($justifyContent: center);

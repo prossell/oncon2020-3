@@ -91,25 +91,14 @@ export default {
           date: '2020/04/30',
           title_ja: '審査員の追加',
           detaile_ja: '齊藤義明 様'
+        },
+        {
+          pub: true,
+          date: '2020/05/01',
+          title_ja: '🎏🎏🎏 オンコンがスタートしました！🎏🎏🎏',
+          detaile_ja:
+            '学生の応募を締め切りました。22チーム110名でこれから1週間頑張りましょう！！！'
         }
-        // {
-        //   pub: true,
-        //   date: '2020/04/16',
-        //   title_ja: 'スポンサー企業の公開',
-        //   title_en: 'Introduction of Sponsor',
-        //   detaile_ja: 'エキサイト(株)様',
-        //   detaile_en: 'Excite Japan Co., Ltd.'
-        // }
-        // {
-        //   pub: true,
-        //   date: '2020/04/17',
-        //   title_ja: '🌸🌸🌸 オンコンがスタートしました！🌸🌸🌸',
-        //   title_en: '🌸🌸🌸 The contest has started！🌸🌸🌸',
-        //   detaile_ja:
-        //     '学生の応募を締め切りました。応募者数は前回の倍近くとなる107名！これから1週間頑張りましょう！',
-        //   detaile_en:
-        //     "The number of applicants was 107, nearly double the previous contest! Let's work hard for the week ahead!"
-        // }
       ]
     }
   },

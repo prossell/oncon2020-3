@@ -61,7 +61,7 @@ export default {
       judges: [
         {
           name: '西村 真陽',
-          // affiliate: ['株式会社ディー・エヌ・エー'],
+          affiliate: ['株式会社ディー・エヌ・エー'],
           img: 'nishimura_masaya',
           about: [
             '同志社大学卒。学生時代はRed Bull Japanでのブランドマーケティングを経験したのち、2016年にDeNA新卒入社。',

@@ -98,6 +98,12 @@ export default {
           title_ja: '🎏🎏🎏 オンコンがスタートしました！🎏🎏🎏',
           detaile_ja:
             '学生の応募を締め切りました。22チーム110名でこれから1週間頑張りましょう！！！'
+        },
+        {
+          pub: true,
+          date: '2020/05/01',
+          title_ja: 'サポーター企業の追加',
+          detaile_ja: '(株)DeNA 様'
         }
       ]
     }

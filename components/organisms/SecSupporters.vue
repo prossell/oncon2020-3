@@ -37,6 +37,12 @@ export default {
           logo: 'academic_gangstar',
           jaName: '株式会社 アカデミックギャングスター',
           enName: 'Academic Gangstar Co., Ltd.'
+        },
+        {
+          link: 'https://dena.com/jp/',
+          logo: 'dena',
+          jaName: '株式会社ディー・エヌ・エー',
+          enName: 'DeNA Co., Ltd.'
         }
       ]
     }

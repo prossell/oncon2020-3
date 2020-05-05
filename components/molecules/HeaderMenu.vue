@@ -18,6 +18,12 @@
         //-   ToggleLocale
         .header_menu_sns
           TopShareSNS
+      .header_notify(v-if="$route.path === '/'")
+        nuxt-link(to="awardCeremony").header_notify_box
+          .title
+            span.press プレスリリース
+            span.content Final Pitch 見学者募集！
+          .arrow
 </template>
 <script>
 // components
@@ -99,6 +105,52 @@ $header-height: 80px;
   }
 }
 
+.header_notify {
+  margin-top: 24px;
+  z-index: 300;
+  text-align: right;
+  display: block;
+  &_box {
+    color: $white;
+    background-color: $link;
+    padding: 12px 40px 12px 16px;
+    display: inline-block;
+    text-decoration: none;
+    .title {
+      display: inline;
+      .press {
+        font-size: 1.2rem;
+      }
+      .content {
+        font-size: 1.8rem;
+        padding: 0 16px;
+      }
+    }
+    // .content {
+    //   display: inline;
+    //   font-size: 1.8rem;
+    // }
+    .arrow {
+      transition: 0.3s $ease-out-1;
+      transform: translateX(0);
+      display: inline-block;
+      // font-size: 2rem;
+      // vertical-align: middle;
+      border-top: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 8px solid;
+      color: $white;
+    }
+    // .content:hover + .arrow {
+    //   transform: translateX(8px);
+    // }
+  }
+}
+.title:hover + .arrow {
+  transform: translateX(12px);
+}
+
 .menu_open_btn {
   z-index: 100;
   position: fixed;
@@ -163,6 +215,32 @@ a.header_menu_link_title:link {
   }
   .nuxt-link-exact-active {
     color: lighten($link-txt, 20%);
+  }
+
+  .header_notify {
+    text-align: center;
+  }
+
+  .header_notify_box {
+    width: 100%;
+    padding: 12px 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header_notify_box {
+    .arrow {
+      border-top: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 6px solid;
+    }
+
+    .title .content {
+      font-size: 1.4rem;
+      padding: 0 8px;
+    }
   }
 }
 </style>

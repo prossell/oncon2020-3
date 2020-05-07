@@ -2,7 +2,7 @@
   .SecTheme#theme
     SectionTitle(:title="'Theme'")
     .container
-      .theme_discription これら7つのテーマの中から1つを取り組んでいただきます。
+      .theme_discription これら3つのテーマの中から1つを取り組んでいただきます。
       .theme_lists( v-for="(theme,theme_id) in $t('themes')" :key="`theme_${theme_id}`")
         .theme_kind {{ theme.kind }}
         .theme_list

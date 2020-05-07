@@ -39,8 +39,8 @@ export default {
 }
 .sankaoubo {
   transition: 0.4s $ease-out-1;
-  // width: 260px; 募集終了
-  width: 360px;
+  width: 260px; // 募集終了
+  // width: 360px;
 }
 .enfont {
   color: $theme-green;
@@ -55,12 +55,12 @@ export default {
 }
 @media screen and (max-width: $md) {
   .application_btn {
-    width: 60vw;
+    width: 30vw;
     height: 5vw;
   }
   .sankaoubo {
-    // width: 60%; 募集終了
-    width: 70%;
+    width: 18vw;
+    // width: 70%;
   }
   .enfont {
     font-size: 3.2rem;
@@ -78,8 +78,8 @@ export default {
     height: 52px;
   }
   .sankaoubo {
-    // width: 45%; 募集終了
-    width: 55%;
+    width: 45%;
+    // width: 55%;
   }
   .enfont {
     font-size: 3.2rem;

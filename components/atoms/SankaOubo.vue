@@ -1,7 +1,7 @@
 <template lang="pug">
   .sankaoubo_box
-    nuxt-link(to="/disclaimer").application_btn
-      BoshushuryoSvg.sankaoubo
+    nuxt-link(to="/awardCeremony").application_btn
+      AwardCeremonySvg.sankaoubo
       //- .sankaoubo(v-if="this.$i18n.locale === 'en'")
       //-   .enfont Apply!
 
@@ -12,11 +12,14 @@
 import SankaouboSvg from '~/assets/images/sankaoubo.svg?inline'
 import BoshushuryoSvg from '~/assets/images/boshushuryo.svg?inline'
 import CommingSoonSvg from '~/assets/images/comming_soon.svg?inline'
+import AwardCeremonySvg from '~/assets/images/hyousyousikibosyuu.svg?inline'
+
 export default {
   components: {
     SankaouboSvg,
     BoshushuryoSvg,
-    CommingSoonSvg
+    CommingSoonSvg,
+    AwardCeremonySvg
   }
 }
 </script>
@@ -36,7 +39,8 @@ export default {
 }
 .sankaoubo {
   transition: 0.4s $ease-out-1;
-  width: 260px;
+  // width: 260px; 募集終了
+  width: 360px;
 }
 .enfont {
   color: $theme-green;
@@ -55,7 +59,8 @@ export default {
     height: 5vw;
   }
   .sankaoubo {
-    width: 60%;
+    // width: 60%; 募集終了
+    width: 70%;
   }
   .enfont {
     font-size: 3.2rem;
@@ -73,7 +78,8 @@ export default {
     height: 52px;
   }
   .sankaoubo {
-    width: 45%;
+    // width: 45%; 募集終了
+    width: 55%;
   }
   .enfont {
     font-size: 3.2rem;

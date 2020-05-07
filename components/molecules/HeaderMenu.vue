@@ -18,12 +18,16 @@
         //-   ToggleLocale
         .header_menu_sns
           TopShareSNS
-      .header_notify(v-if="$route.path === '/'")
-        nuxt-link(to="awardCeremony").header_notify_box
-          .title
-            span.press プレスリリース
-            span.content Final Pitch 見学者募集！
-          .arrow
+      //- .header_notify(v-if="$route.path === '/'")
+      //-   nuxt-link(to="awardCeremony").header_notify_box
+      //-     .title
+      //-       span.press プレスリリース
+      //-       span.content Final Pitch 見学者募集！
+      //-     .arrow
+      //-   a(href="https://twitter.com/Prossell_JP").header_notify_box
+      //-     .title
+      //-       span.content Final Pitch 出場チーム決定！
+      //-     .arrow
 </template>
 <script>
 // components
@@ -106,24 +110,32 @@ $header-height: 80px;
 }
 
 .header_notify {
-  margin-top: 24px;
+  margin-top: 20px;
   z-index: 300;
-  text-align: right;
+  // text-align: right;
   display: block;
   &_box {
     color: $white;
     background-color: $link;
     padding: 12px 40px 12px 16px;
-    display: inline-block;
+    margin-bottom: 12px;
+    // margin-left: 16px;
+    margin-left: auto;
+    display: block;
     text-decoration: none;
+    width: 392px;
+    position: relative;
     .title {
-      display: inline;
+      // display: inline;
+      text-align: right;
+      padding-right: 16px;
       .press {
         font-size: 1.2rem;
+        padding-right: 16px;
       }
       .content {
         font-size: 1.8rem;
-        padding: 0 16px;
+        padding-right: 16px;
       }
     }
     // .content {
@@ -131,6 +143,7 @@ $header-height: 80px;
     //   font-size: 1.8rem;
     // }
     .arrow {
+      @include absolute($top: 18px, $right: 40px);
       transition: 0.3s $ease-out-1;
       transform: translateX(0);
       display: inline-block;
@@ -224,7 +237,10 @@ a.header_menu_link_title:link {
   .header_notify_box {
     width: 100%;
     padding: 12px 0;
-    margin: auto;
+    margin: 12px auto;
+    .title {
+      margin-right: 32px;
+    }
   }
 }
 
@@ -237,9 +253,15 @@ a.header_menu_link_title:link {
       border-left: 6px solid;
     }
 
-    .title .content {
-      font-size: 1.4rem;
-      padding: 0 8px;
+    .title {
+      .press {
+        padding-right: 8px;
+      }
+      .content {
+        padding-right: 8px;
+        font-size: 1.4rem;
+      }
+      // font-size: 1.2rem;
     }
   }
 }

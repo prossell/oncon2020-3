@@ -51,7 +51,7 @@ export default {
 }
 @media screen and (max-width: $md) {
   .application_btn {
-    width: 30vw;
+    width: 60vw;
     height: 5vw;
   }
   .sankaoubo {
@@ -69,7 +69,7 @@ export default {
 @media screen and (max-width: $sm) {
   .application_btn {
     margin: auto;
-    width: 100%;
+    min-width: 100%;
     height: 52px;
   }
   .sankaoubo {

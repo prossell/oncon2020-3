@@ -62,6 +62,40 @@
   height: 80px;
   position: relative;
 }
+
+.next {
+  margin-right: 8px;
+  margin-top: 16px;
+  color: $dim-gray;
+  display: block;
+  &_event {
+    font-family: 'Noto Sans JP';
+    font-weight: $weight-bold;
+    font-style: italic;
+    font-size: 2.4rem;
+    display: inline;
+    vertical-align: middle;
+    text-decoration: none;
+    color: $dim-gray;
+    &:hover {
+      color: $gray;
+    }
+  }
+
+  &_arrow {
+    transition: 0.3s $ease-out-1;
+    transform: translateX(0);
+    margin-left: 8px;
+    display: inline;
+    height: 18px;
+    vertical-align: middle;
+  }
+
+  &_event:hover + &_arrow {
+    transform: translateX(8px);
+  }
+}
+
 .scroll_down_svg {
   @include absolute(0, 0, 0, 0);
   margin: auto;
@@ -116,6 +150,16 @@
       font-size: 3vw;
     }
   }
+  .next {
+    &_event {
+      font-size: 1.6rem;
+    }
+    &_arrow {
+      height: 12px;
+    }
+  }
+
+
 }
 
 

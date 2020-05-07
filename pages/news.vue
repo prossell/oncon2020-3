@@ -104,6 +104,14 @@ export default {
           date: '2020/05/01',
           title_ja: 'サポーター企業の追加',
           detaile_ja: '(株)DeNA 様'
+        },
+        {
+          pub: true,
+          date: '2020/05/06',
+          title_ja: 'Final Pitchの見学者募集を開始しました。',
+          detaile_ja: '申し込みページへ遷移します。',
+
+          link: '/awardCeremony'
         }
       ]
     }

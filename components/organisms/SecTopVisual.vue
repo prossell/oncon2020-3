@@ -11,7 +11,7 @@
             //- .application_period_text {{ $t('index.application_period') }}
             //- .application_period_date 4/24 ~ 4/30
           .next
-            a.next_event(href="https://note.com/prossell2019/n/nfc21159aae61") Final Pitch出場チームを紹介！
+            a.next_event(href="https://note.com/prossell2019/n/n1c3a086b67dc") 最終結果はコチラ！
             ArrowSvg.next_arrow
       .scroll_down(v-if="$mq !== 'sm'")
         ScrollSvg.scroll_down_svg

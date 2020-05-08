@@ -7,9 +7,12 @@
         .right_contents_wrapper
           .catch_copy {{ $t('index.catch_copy') }}
           SankaOubo
-          .application_period
-            .application_period_text {{ $t('index.application_period') }}
-            .application_period_date 4/24 ~ 4/30
+          //- .application_period
+            //- .application_period_text {{ $t('index.application_period') }}
+            //- .application_period_date 4/24 ~ 4/30
+          .next
+            a.next_event(href="https://note.com/prossell2019/n/nfc21159aae61") Final Pitch出場チームを紹介！
+            ArrowSvg.next_arrow
       .scroll_down(v-if="$mq !== 'sm'")
         ScrollSvg.scroll_down_svg
         .scroll_line
@@ -22,6 +25,7 @@ import SankaOubo from '~/components/atoms/SankaOubo.vue'
 import LogoSvg from '~/assets/images/oic2020_logo.svg?inline'
 import CommingSoonSvg from '~/assets/images/comming_soon.svg?inline'
 import ScrollSvg from '~/assets/images/scroll.svg?inline'
+import ArrowSvg from '~/assets/images/angle-right-solid.svg?inline'
 
 export default {
   components: {
@@ -29,7 +33,8 @@ export default {
     SankaOubo,
     LogoSvg,
     CommingSoonSvg,
-    ScrollSvg
+    ScrollSvg,
+    ArrowSvg
   }
 }
 </script>

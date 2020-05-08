@@ -115,14 +115,14 @@ export default {
         {
           pub: true,
           date: '2020/05/07',
-          title_ja: '最終発表チームの紹介！（詳細はnoteへ）',
+          title_ja: '最終発表チームの紹介！（note）',
           detaile_ja: '翌日の最終発表に出場するチームを紹介します！',
           link: 'https://note.com/prossell2019/n/nfc21159aae61'
         },
         {
           pub: true,
           date: '2020/05/08',
-          title_ja: 'オンコンが無事終了しました！(結果はnoteへ)',
+          title_ja: 'オンコンが無事終了しました！（結果はnoteへ）',
           detaile_ja: '参加者のみなさん！1週間お疲れ様でした！！！',
           link: 'https://note.com/prossell2019/n/n1c3a086b67dc'
         }

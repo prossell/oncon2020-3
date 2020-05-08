@@ -109,9 +109,22 @@ export default {
           pub: true,
           date: '2020/05/06',
           title_ja: 'Final Pitchの見学者募集を開始しました。',
-          detaile_ja: '申し込みページへ遷移します。',
-
+          detaile_ja: '申し込みページへ移動します。（終了しました。）',
           link: '/awardCeremony'
+        },
+        {
+          pub: true,
+          date: '2020/05/07',
+          title_ja: '最終発表チームの紹介！（note）',
+          detaile_ja: '翌日の最終発表に出場するチームを紹介します！',
+          link: 'https://note.com/prossell2019/n/nfc21159aae61'
+        },
+        {
+          pub: true,
+          date: '2020/05/08',
+          title_ja: 'オンコンが無事終了しました！（結果はnoteへ）',
+          detaile_ja: '参加者のみなさん！1週間お疲れ様でした！！！',
+          link: 'https://note.com/prossell2019/n/n1c3a086b67dc'
         }
       ]
     }

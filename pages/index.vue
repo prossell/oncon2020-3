@@ -13,7 +13,7 @@
       //- .separator_sankaoubo
       SankaOubo.sankaoubo_box_parent
       .next
-        a.next_event(href="https://note.com/prossell2019/n/nfc21159aae61") Final Pitch出場チームを紹介！
+        a.next_event(href="https://note.com/prossell2019/n/n1c3a086b67dc") 最終結果はコチラ！
         ArrowSvg.next_arrow
     SecTheme
     SecAward

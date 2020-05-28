@@ -78,10 +78,14 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/markdownit',
     'nuxt-webfontloader',
+    '@nuxtjs/google-analytics',
     ['nuxt-mq'],
     '@nuxtjs/svg',
     ['cookie-universal-nuxt', { parseJSON: false }]
   ],
+  googleAnalytics: {
+    id: 'UA-167914225-2'
+   },
   styleResources: {
     scss: ['~/assets/scss/variables.scss', '~/assets/scss/mixins.scss'],
     less: [],

@@ -18,7 +18,7 @@ export default {
     return {
       events: [
         {
-          link: 'https://oncon2020.prossell.jp/',
+          link: 'https://oncon2020-1.prossell.jp/',
           data: '1/14 〜 3/3 ',
           title: 'ONLINE INTERN CONTEST 2020'
         },
